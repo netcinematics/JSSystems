@@ -1,0 +1,45 @@
+Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive,DataSix
+,Web2.0,AJAX,Jessie James Garette?,,176,0,0,10,0,0
+,Web2.0,JSON,Douglas Crockford,,176,0,0,10,0,0
+,Web2.0,Web Services,RMI,,176,0,0,10,0,0
+,Web2.0,Web Services,RPC,,76,0,0,10,0,0
+,Web2.0,Web Services,DWR,,176,0,0,10,0,0
+,Web2.0,Web Services,REST,,234,0,0,10,0,0
+,Web2.0,Libraries I ,Prototype,,176,0,0,10,0,0
+,Web2.0,Libraries I ,Script.aculo.us,,176,0,0,10,0,0
+,Web2.0,Libraries I ,...,,176,0,0,10,0,0
+,Web2.0,Paradigm,GIS I,GoogleMaps,176,0,0,10,0,0
+,Web2.0,Paradigm,GIS I,GeoXtension,176,0,0,10,0,0
+,Web2.0,Paradigm,GIS I,GoogleEarth,176,0,0,10,0,0
+,Web2.0,Paradigm,GIS I,...,176,0,0,10,0,0
+,Web2.0,Methodology-,Asynchronicity,,176,0,0,10,0,0
+,Web2.0,Methodology-,RIA,,176,0,0,10,0,0
+,Web2.0,Methodology-,"Good Parts",Douglas Crockford,176,0,0,10,0,0
+,Web2.0,Methodology-,Best-Practices,Graceful Degradation,176,0,0,10,0,0
+,Web2.0,Methodology-,Best-Practices,Progressive Enhancement,176,0,0,10,0,0
+,Web2.0,Methodology-,Best-Practices,Unobtrusive JavaScript,176,0,0,10,0,0
+,CambrianExplosion,Libraries II,jQuery,John Resig,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,Measurement:,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,yui,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,mootools,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,underscore,,676,10,0,0,0,0
+,CambrianExplosion,Libraries II,microjs,,676,10,0,0,0,0
+,CambrianExplosion,Frameworks,extjs,,676,10,0,0,0,0
+,CambrianExplosion,Frameworks,dojo,,676,10,0,0,0,0
+,CambrianExplosion,Frameworks,...,,676,10,0,0,0,0
+,CambrianExplosion,MVC,Angular,,676,10,0,0,0,0
+,CambrianExplosion,MVC,Backbone,,676,10,0,0,0,0
+,CambrianExplosion,MVC,Batman,,676,10,0,0,0,0
+,CambrianExplosion,MVC,ember,,676,10,0,0,0,0
+,CambrianExplosion,MVC,knockout,,676,10,0,0,0,0
+,CambrianExplosion,MVC,spine,,676,10,0,0,0,0
+,CambrianExplosion,MVC,...,,,676,10,0,0,0,0
+,CambrianExplosion,MVC,Methodology:,SPA,676,10,0,0,0,0
+,CambrianExplosion,MVC,Methodology:,Routing,676,10,0,0,0,0
+,CambrianExplosion,MVC,Methodology:,Separation of Concerns,676,10,0,0,0,0
+,PlatformWars,TemplateB2b,,,267,0,10,0,0,0
+,Great Transmigration,TemplateB2b,,,467,0,10,0,0,0
+,ZombieApocalypse,TemplateB2b,,,267,0,10,0,0,0
