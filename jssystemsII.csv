@@ -1,45 +1,157 @@
 Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive,DataSix
-,Web2.0,AJAX,Jessie James Garette?,,176,0,0,10,0,0
-,Web2.0,JSON,Douglas Crockford,,176,0,0,10,0,0
-,Web2.0,Web Services,RMI,,176,0,0,10,0,0
-,Web2.0,Web Services,RPC,,76,0,0,10,0,0
-,Web2.0,Web Services,DWR,,176,0,0,10,0,0
-,Web2.0,Web Services,REST,,234,0,0,10,0,0
-,Web2.0,Libraries I ,Prototype,,176,0,0,10,0,0
-,Web2.0,Libraries I ,Script.aculo.us,,176,0,0,10,0,0
-,Web2.0,Libraries I ,...,,176,0,0,10,0,0
-,Web2.0,Paradigm,GIS I,GoogleMaps,176,0,0,10,0,0
-,Web2.0,Paradigm,GIS I,GeoXtension,176,0,0,10,0,0
-,Web2.0,Paradigm,GIS I,GoogleEarth,176,0,0,10,0,0
-,Web2.0,Paradigm,GIS I,...,176,0,0,10,0,0
-,Web2.0,Methodology-,Asynchronicity,,176,0,0,10,0,0
-,Web2.0,Methodology-,RIA,,176,0,0,10,0,0
-,Web2.0,Methodology-,"Good Parts",Douglas Crockford,176,0,0,10,0,0
-,Web2.0,Methodology-,Best-Practices,Graceful Degradation,176,0,0,10,0,0
-,Web2.0,Methodology-,Best-Practices,Progressive Enhancement,176,0,0,10,0,0
-,Web2.0,Methodology-,Best-Practices,Unobtrusive JavaScript,176,0,0,10,0,0
-,CambrianExplosion,Libraries II,jQuery,John Resig,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,Measurement:,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,yui,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,mootools,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,...,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,underscore,,676,10,0,0,0,0
-,CambrianExplosion,Libraries II,microjs,,676,10,0,0,0,0
-,CambrianExplosion,Frameworks,extjs,,676,10,0,0,0,0
-,CambrianExplosion,Frameworks,dojo,,676,10,0,0,0,0
-,CambrianExplosion,Frameworks,...,,676,10,0,0,0,0
-,CambrianExplosion,MVC,Angular,,676,10,0,0,0,0
-,CambrianExplosion,MVC,Backbone,,676,10,0,0,0,0
-,CambrianExplosion,MVC,Batman,,676,10,0,0,0,0
-,CambrianExplosion,MVC,ember,,676,10,0,0,0,0
-,CambrianExplosion,MVC,knockout,,676,10,0,0,0,0
-,CambrianExplosion,MVC,spine,,676,10,0,0,0,0
-,CambrianExplosion,MVC,...,,,676,10,0,0,0,0
-,CambrianExplosion,MVC,Methodology:,SPA,676,10,0,0,0,0
-,CambrianExplosion,MVC,Methodology:,Routing,676,10,0,0,0,0
-,CambrianExplosion,MVC,Methodology:,Separation of Concerns,676,10,0,0,0,0
+,Web 2.0 -,AJAX --,Jessie James Garette?,,176,0,0,10,0,0
+,Web 2.0 -,JSON --,Douglas Crockford,,176,0,0,10,0,0
+,Web 2.0 -,Web Services --,RMI,,176,0,0,10,0,0
+,Web 2.0 -,Web Services --,RPC,,76,0,0,10,0,0
+,Web 2.0 -,Web Services --,DWR,,176,0,0,10,0,0
+,Web 2.0 -,Web Services --,REST,,234,0,0,10,0,0
+,Web 2.0 -,Library I --,Prototype,John Resig,176,0,0,10,0,0
+,Web 2.0 -,Library I --,Script.aculo.us,,176,0,0,10,0,0
+,Web 2.0 -,Library I --,...,,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,GIS I --,GoogleMaps,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,GIS I --,GeoXtension,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,GIS I --,GoogleEarth,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,GIS I --,...,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,AJAX/SOAP --,,176,0,0,10,0,0
+,Web 2.0 -,Milestone --,JSON/XML --,,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,Asynchronous Data,,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,RIA,,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,"Good Parts",Douglas Crockford,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,Best-Practices---,---Graceful Degradation,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,Best-Practices---,---Progressive Enhancement,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,Best-Practices---,---Unobtrusive JavaScript,176,0,0,10,0,0
+,Web 2.0 -,Methodology --,Best-Practices---,---Classical Inheritance,176,0,0,10,0,0
+,CambrianExplosion -,Library II --,jQuery,John Resig,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,jQuery,Measurement:75% of Fortune 500 Websites,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,yui,,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,...,,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,mootools,,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,...,,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,underscore,,676,10,0,0,0,0
+,CambrianExplosion -,Library II --,microjs,,676,10,0,0,0,0
+,CambrianExplosion -,Frameworks,extjs,,676,10,0,0,0,0
+,CambrianExplosion -,Frameworks,dojo,,676,10,0,0,0,0
+,CambrianExplosion -,Frameworks,...,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Angular,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Backbone,TJ Holowachuk,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Batman,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,ember,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,knockout,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,spine,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,...,,,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Methodology:,SPA,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Methodology:,Routing,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Methodology:,Separation of Concerns,676,10,0,0,0,0
+,CambrianExplosion -,MVC,Measurement:,More than 40 MV*s,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Addy Osmani,GoF,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Namespace,,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Module,,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Callback,,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Promise,,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,Iterator,,676,10,0,0,0,0
+,CambrianExplosion -,DesignPatterns,...,,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,Physics.js,,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,WebGL,,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,three.js,Mr.doob,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,canman,,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,box2d?,,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,Methodology,SVG,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,Methodology,CANVAS,676,10,0,0,0,0
+,CambrianExplosion -,VisualLibraries,...,,676,10,0,0,0,0
+,CambrianExplosion -,Game Engines,Melon.js,,676,10,0,0,0,0
+,CambrianExplosion -,Game Engines,Impact.js,,676,10,0,0,0,0
+,CambrianExplosion -,Game Engines,Crafty.js,,676,10,0,0,0,0
+,CambrianExplosion -,Game Engines,Lime.js,,676,10,0,0,0,0
+,CambrianExplosion -,Game Engines,Phaser.js,,676,10,0,0,0,0
+,CambrianExplosion -,Audio,midi.js,,676,10,0,0,0,0
+,CambrianExplosion -,Audio,sound.js,,676,10,0,0,0,0
+,CambrianExplosion -,Audio,...,,676,10,0,0,0,0
+,CambrianExplosion -,Video,Video.js,,676,10,0,0,0,0
+,CambrianExplosion -,Video,popcorn.js,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,PhoneGap,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,Zepto,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,Appcellerator,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,Sencha-Touch,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,JQuery-Mobile,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,Apigee,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,hammer.js,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,WebAPI,,676,10,0,0,0,0
+,CambrianExplosion -,Mobile,Milestone, LinkedIn Mobile,676,10,0,0,0,0
+,CambrianExplosion -,APIs,twitter,,676,10,0,0,0,0
+,CambrianExplosion -,APIs,facebook,,676,10,0,0,0,0
+,CambrianExplosion -,APIs,stackoverflow,,676,10,0,0,0,0
+,CambrianExplosion -,APIs,googlemaps,,676,10,0,0,0,0
+,CambrianExplosion -,APIs,googleglass,,676,10,0,0,0,0
+,CambrianExplosion -,APIs,...,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,D3,Michael Bostok,676,10,0,0,0,0
+,CambrianExplosion -,Charts,High-Charts,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,Timeline.js,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,Protovis,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,JIT,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,RiskShaw,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,DC,,676,10,0,0,0,0
+,CambrianExplosion -,Charts,Raphael,Dimitry Baranovsky,676,10,0,0,0,0
+,CambrianExplosion -,Charts,Milestone,Extensible-Families,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,GIS II,leaflet,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,GIS II,ArcGIS,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,Methodology:,GeoLocation,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,Math.js,,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,Date.js,,676,10,0,0,0,0
+,CambrianExplosion -,Sciences,...,,676,10,0,0,0,0
+,CambrianExplosion -,Documents,ODF,,676,10,0,0,0,0
+,CambrianExplosion -,Documents,WebODF,,676,10,0,0,0,0
+,CambrianExplosion -,Collaboration,TogetherJS,,676,10,0,0,0,0
+,CambrianExplosion -,Collaboration,GoogleDrive,,676,10,0,0,0,0
+,CambrianExplosion -,Presentation,deck.js,,676,10,0,0,0,0
+,CambrianExplosion -,Presentation,reveal.js,,676,10,0,0,0,0
+,CambrianExplosion -,Presentation,impress.js,,676,10,0,0,0,0
+,CambrianExplosion -,Presentation,...,,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Loaders,require.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Loaders,yepnope,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Loaders,curl,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Loaders,component,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Loaders,AMD,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Build,grunt.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Build,gulp.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,minification,uglify,676,10,0,0,0,0
+,CambrianExplosion -,Utility,minification,jsMin,676,10,0,0,0,0
+,CambrianExplosion -,Utility,minification,yui compressor,676,10,0,0,0,0
+,CambrianExplosion -,Utility,validation,jsLint,676,10,0,0,0,0
+,CambrianExplosion -,Utility,validation,jsHint,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,TwitterBootstrap,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,HTML5Boilerplate,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,Node-Webkit,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,Browserify,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,Bower,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,volo,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,kendo,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,Yeoman,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Scaffolding,...,676,10,0,0,0,0
+,CambrianExplosion -,Utility,DevTools,PaulIrish,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Firebug,,676,10,0,0,0,0
+,CambrianExplosion -,Utility,ErrorLog,Airbrake,676,10,0,0,0,0
+,CambrianExplosion -,Utility,ErrorLog,Sentry,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Templating,handlebars,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Templating,moustache,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Templating,jade,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Templating,...,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,jasmine,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,istanbul,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,mocha,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,karma,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,phantom.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,cucumber.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,sinon.js,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,intern,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,QUnit,676,10,0,0,0,0
+,CambrianExplosion -,Utility,TDD/BDD,...,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Methodology:,Libworks & Modules,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Methodology:,Design Patterns,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Measurement,GitHub Contribution#,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Milestone:,GitHub Fork-Families,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Milestone:,Apple/Adobe/Flash,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Milestone:,Microsoft/Silverlight,676,10,0,0,0,0
+,CambrianExplosion -,Utility,Milestone:,GreatHorizontalMigration,676,10,0,0,0,0
 ,PlatformWars,TemplateB2b,,,267,0,10,0,0,0
 ,Great Transmigration,TemplateB2b,,,467,0,10,0,0,0
 ,ZombieApocalypse,TemplateB2b,,,267,0,10,0,0,0

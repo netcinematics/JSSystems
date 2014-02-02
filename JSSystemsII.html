@@ -29,6 +29,11 @@
     {
         .nytg-navigation li {float: none;}
         #chart {top: 200px;}
+        .rounded li {border-radius: 4px; border:solid 1px #CCC;}
+        .nytg-navigation li:last-of-type {
+            border-right: solid 1px #CCC;
+            border-radius: 4px 4px 4px 4px;
+        }
     }
     @media screen and (max-width: 520px) /* MEDIA-QUERY: TABLET-PORTRAIT - SMALLER THAN 520 WIDE */
     {
@@ -44,35 +49,35 @@
 </head>
 <body style="height:900px; width:1280px; overflow:auto">
 
-<div style="position:absolute; left:20px; top:12px;">
+<div style="position:absolute; left:20px; top:22px;">
     <a href="http://www.adaptivepatterns.net">
         <img src="./img/jsicon1.jpeg" height="80px" style="border-radius:13px; padding:3px; border:1px lightgrey solid;">
     </a>
 </div>
 
-<div class="nytg-navBar" style="left:0px; top:110px; padding-top:0px; margin-right:0px;">
-    <ul class="nytg-navigation clearfix" style="list-style-type:none; padding-left:13px;">
-        <li id="buttonA" class="selected">Web2.0</li>
-        <li id="buttonB">CambrianExplosion</li>
-        <li id="buttonC">PlatformWars</li>
+<div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;">
+    <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
+        <li id="buttonA" class="selected">Web 2.0</li>
+        <li id="buttonB">Cambrian Explosion</li>
+        <li id="buttonC">Platform Wars</li>
         <li id="buttonD">The Great Transmigration</li>
-        <li id="buttonE">ZombieApocalypse</li>
+        <li id="buttonE">Zombie Apocalypse</li>
     </ul>
 </div>
 
-<div class="title" style="position:absolute; left:100px; top:75px;">
+<div class="title" style="position:absolute; left:100px; top:85px;">
     <h3>Systems</h3>
 </div>
 
 <div id="footer" style="position:absolute; right:25px; top:0px;">
     <div class="hint" style="padding-top:6px;">
-        JS Systems II reads like a hollywood epic.<br>
+        JS Systems reads like a hollywood adventure.<br>
         Web 2.0 erupts into Explosion,<br>
         Two Wars, Transmigration,<br>
         and a Zombie Apocalypse.
         <section class="instructions" style="margin-top:10px;">
-            <i>* Click button for <i>time period.</i><br>
-            <i>* Click circle for <i> subsystem</i>.<br>
+            <i>* Try button for <i>time period.</i><br>
+            <i>* And circle for <i> subsystem</i>.<br>
         </section>
     </div>
 </div>
@@ -105,10 +110,13 @@
 </div>
 
 <footer style="position:absolute; bottom:0px; left:0px; right:0px; width=100%;">
-<div id="d3ref" style="text-align=center; width=100%;">made in d3</div>
-<!--div id="d3ref" style="position:absolute; bottom:10px; left:175px;">stay tuned for JSSystems III.</div>
+
+<div id="d3ref" style="">made in d3</div>
+<div id="d3ref" style="text-align:right;">stay tuned for JSSystems III.</div>
+
 <div id="twitterref" style="position:absolute; bottom:10px; left:15px;">-send corrections to github-</div>
-<div id="twitterref" style="position:absolute; bottom:10px; left:15px;">@adaptivepattern</div-->
+<div id="twitterref" style="position:absolute; bottom:10px; left:15px;">@adaptivepattern</div>
+<div id="twitterref" style="position:absolute; bottom:10px; left:15px;">..innovation in progress...</div>
 </footer>
 
 <script type="text/javascript" src="./d3.min.js"></script>
@@ -128,8 +136,14 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
+
+    //-Responsive-Width-.
+    var respWidth = 1280;
+    //respWidth = 320;
+
+
     var m = [20, 120, 20, 120],
-            w = 1280 - m[1] - m[3],
+            w = respWidth - m[1] - m[3],
             h = 700 - m[0] - m[2],
             i = 0,
             root = {};
@@ -467,12 +481,14 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
                 .on("click", function(d) {                                           //Click-Handler-.
                     //check to see if kids are all blank.
                     var realNode = false;
-                    d.values.forEach(function (d){
-                        if(d.key!='') {                                          // hide blank nodes-.
-                            realNode = true;
-                            return false;
-                        }  
-                    });
+                    if(d.values){
+                        d.values.forEach(function (d){
+                            if(d['Level'+d.depth] != '') {                                // hide blank nodes-.
+                                realNode = true;
+                                return false;
+                            }  
+                        });
+                    }
 
                     if(realNode){
                         toggle(d);
