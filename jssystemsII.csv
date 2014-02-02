@@ -21,137 +21,178 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Web 2.0 -,Methodology --,Best-Practices---,---Progressive Enhancement,176,0,0,10,0,0
 ,Web 2.0 -,Methodology --,Best-Practices---,---Unobtrusive JavaScript,176,0,0,10,0,0
 ,Web 2.0 -,Methodology --,Best-Practices---,---Classical Inheritance,176,0,0,10,0,0
-,CambrianExplosion -,Library II --,jQuery,John Resig,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,jQuery,Measurement:75% of Fortune 500 Websites,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,yui,,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,...,,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,mootools,,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,...,,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,underscore,,676,10,0,0,0,0
-,CambrianExplosion -,Library II --,microjs,,676,10,0,0,0,0
-,CambrianExplosion -,Frameworks,extjs,,676,10,0,0,0,0
-,CambrianExplosion -,Frameworks,dojo,,676,10,0,0,0,0
-,CambrianExplosion -,Frameworks,...,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Angular,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Backbone,TJ Holowachuk,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Batman,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,ember,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,knockout,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,spine,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,...,,,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Methodology:,SPA,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Methodology:,Routing,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Methodology:,Separation of Concerns,676,10,0,0,0,0
-,CambrianExplosion -,MVC,Measurement:,More than 40 MV*s,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Addy Osmani,GoF,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Namespace,,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Module,,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Callback,,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Promise,,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,Iterator,,676,10,0,0,0,0
-,CambrianExplosion -,DesignPatterns,...,,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,Physics.js,,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,WebGL,,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,three.js,Mr.doob,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,canman,,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,box2d?,,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,Methodology,SVG,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,Methodology,CANVAS,676,10,0,0,0,0
-,CambrianExplosion -,VisualLibraries,...,,676,10,0,0,0,0
-,CambrianExplosion -,Game Engines,Melon.js,,676,10,0,0,0,0
-,CambrianExplosion -,Game Engines,Impact.js,,676,10,0,0,0,0
-,CambrianExplosion -,Game Engines,Crafty.js,,676,10,0,0,0,0
-,CambrianExplosion -,Game Engines,Lime.js,,676,10,0,0,0,0
-,CambrianExplosion -,Game Engines,Phaser.js,,676,10,0,0,0,0
-,CambrianExplosion -,Audio,midi.js,,676,10,0,0,0,0
-,CambrianExplosion -,Audio,sound.js,,676,10,0,0,0,0
-,CambrianExplosion -,Audio,...,,676,10,0,0,0,0
-,CambrianExplosion -,Video,Video.js,,676,10,0,0,0,0
-,CambrianExplosion -,Video,popcorn.js,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,PhoneGap,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,Zepto,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,Appcellerator,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,Sencha-Touch,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,JQuery-Mobile,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,Apigee,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,hammer.js,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,WebAPI,,676,10,0,0,0,0
-,CambrianExplosion -,Mobile,Milestone, LinkedIn Mobile,676,10,0,0,0,0
-,CambrianExplosion -,APIs,twitter,,676,10,0,0,0,0
-,CambrianExplosion -,APIs,facebook,,676,10,0,0,0,0
-,CambrianExplosion -,APIs,stackoverflow,,676,10,0,0,0,0
-,CambrianExplosion -,APIs,googlemaps,,676,10,0,0,0,0
-,CambrianExplosion -,APIs,googleglass,,676,10,0,0,0,0
-,CambrianExplosion -,APIs,...,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,D3,Michael Bostok,676,10,0,0,0,0
-,CambrianExplosion -,Charts,High-Charts,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,Timeline.js,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,Protovis,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,JIT,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,RiskShaw,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,DC,,676,10,0,0,0,0
-,CambrianExplosion -,Charts,Raphael,Dimitry Baranovsky,676,10,0,0,0,0
-,CambrianExplosion -,Charts,Milestone,Extensible-Families,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,GIS II,leaflet,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,GIS II,ArcGIS,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,Methodology:,GeoLocation,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,Math.js,,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,Date.js,,676,10,0,0,0,0
-,CambrianExplosion -,Sciences,...,,676,10,0,0,0,0
-,CambrianExplosion -,Documents,ODF,,676,10,0,0,0,0
-,CambrianExplosion -,Documents,WebODF,,676,10,0,0,0,0
-,CambrianExplosion -,Collaboration,TogetherJS,,676,10,0,0,0,0
-,CambrianExplosion -,Collaboration,GoogleDrive,,676,10,0,0,0,0
-,CambrianExplosion -,Presentation,deck.js,,676,10,0,0,0,0
-,CambrianExplosion -,Presentation,reveal.js,,676,10,0,0,0,0
-,CambrianExplosion -,Presentation,impress.js,,676,10,0,0,0,0
-,CambrianExplosion -,Presentation,...,,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Loaders,require.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Loaders,yepnope,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Loaders,curl,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Loaders,component,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Loaders,AMD,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Build,grunt.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Build,gulp.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,minification,uglify,676,10,0,0,0,0
-,CambrianExplosion -,Utility,minification,jsMin,676,10,0,0,0,0
-,CambrianExplosion -,Utility,minification,yui compressor,676,10,0,0,0,0
-,CambrianExplosion -,Utility,validation,jsLint,676,10,0,0,0,0
-,CambrianExplosion -,Utility,validation,jsHint,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,TwitterBootstrap,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,HTML5Boilerplate,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,Node-Webkit,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,Browserify,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,Bower,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,volo,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,kendo,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,Yeoman,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Scaffolding,...,676,10,0,0,0,0
-,CambrianExplosion -,Utility,DevTools,PaulIrish,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Firebug,,676,10,0,0,0,0
-,CambrianExplosion -,Utility,ErrorLog,Airbrake,676,10,0,0,0,0
-,CambrianExplosion -,Utility,ErrorLog,Sentry,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Templating,handlebars,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Templating,moustache,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Templating,jade,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Templating,...,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,jasmine,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,istanbul,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,mocha,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,karma,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,phantom.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,cucumber.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,sinon.js,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,intern,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,QUnit,676,10,0,0,0,0
-,CambrianExplosion -,Utility,TDD/BDD,...,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Methodology:,Libworks & Modules,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Methodology:,Design Patterns,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Measurement,GitHub Contribution#,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Milestone:,GitHub Fork-Families,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Milestone:,Apple/Adobe/Flash,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Milestone:,Microsoft/Silverlight,676,10,0,0,0,0
-,CambrianExplosion -,Utility,Milestone:,GreatHorizontalMigration,676,10,0,0,0,0
-,PlatformWars,TemplateB2b,,,267,0,10,0,0,0
+,Cambrian Explosion -,Library II --,jQuery,John Resig,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,jQuery,Measurement:75% of Fortune 500 Websites,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,yui,,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,mootools,,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,underscore,,676,10,0,0,0,0
+,Cambrian Explosion -,Library II --,microjs,,676,10,0,0,0,0
+,Cambrian Explosion -,Frameworks,extjs,,676,10,0,0,0,0
+,Cambrian Explosion -,Frameworks,dojo,,676,10,0,0,0,0
+,Cambrian Explosion -,Frameworks,...,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Angular,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Backbone,TJ Holowachuk,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Batman,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,ember,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,knockout,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,spine,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,...,,,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Methodology:,SPA,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Methodology:,Routing,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Methodology:,Separation of Concerns,676,10,0,0,0,0
+,Cambrian Explosion -,MVC,Measurement:,More than 40 MV*s,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Addy Osmani,GoF,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Namespace,,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Module,,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Callback,,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Promise,,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,Iterator,,676,10,0,0,0,0
+,Cambrian Explosion -,DesignPatterns,...,,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,Physics.js,,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,WebGL,,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,three.js,Mr.doob,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,canman,,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,box2d?,,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,Methodology,SVG,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,Methodology,CANVAS,676,10,0,0,0,0
+,Cambrian Explosion -,VisualLibraries,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Game Engines,Melon.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Game Engines,Impact.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Game Engines,Crafty.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Game Engines,Lime.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Game Engines,Phaser.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Audio,midi.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Audio,sound.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Audio,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Video,Video.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Video,popcorn.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,PhoneGap,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,Zepto,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,Appcellerator,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,Sencha-Touch,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,JQuery-Mobile,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,Apigee,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,hammer.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,WebAPI,,676,10,0,0,0,0
+,Cambrian Explosion -,Mobile,Milestone, LinkedIn Mobile,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,twitter,,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,facebook,,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,stackoverflow,,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,googlemaps,,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,googleglass,,676,10,0,0,0,0
+,Cambrian Explosion -,APIs,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,D3,Michael Bostok,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,High-Charts,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,Timeline.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,Protovis,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,JIT,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,RiskShaw,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,DC,,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,Raphael,Dimitry Baranovsky,676,10,0,0,0,0
+,Cambrian Explosion -,Charts,Milestone,Extensible-Families,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,GIS II,leaflet,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,GIS II,ArcGIS,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,Methodology:,GeoLocation,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,Math.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,Date.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Sciences,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Documents,ODF,,676,10,0,0,0,0
+,Cambrian Explosion -,Documents,WebODF,,676,10,0,0,0,0
+,Cambrian Explosion -,Collaboration,TogetherJS,,676,10,0,0,0,0
+,Cambrian Explosion -,Collaboration,GoogleDrive,,676,10,0,0,0,0
+,Cambrian Explosion -,Presentation,deck.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Presentation,reveal.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Presentation,impress.js,,676,10,0,0,0,0
+,Cambrian Explosion -,Presentation,...,,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,require.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,yepnope,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,curl,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,component,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,AMD,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Build,grunt.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Build,gulp.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,uglify,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,jsMin,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,yui compressor,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,validation,jsLint,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,validation,jsHint,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,TwitterBootstrap,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,HTML5Boilerplate,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Node-Webkit,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Browserify,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Bower,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,volo,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,kendo,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Yeoman,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,...,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,DevTools,PaulIrish,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Firebug,,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,ErrorLog,Airbrake,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,ErrorLog,Sentry,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,handlebars,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,moustache,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,jade,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,...,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,jasmine,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,istanbul,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,mocha,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,karma,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,phantom.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,cucumber.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,sinon.js,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,intern,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,QUnit,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,...,676,10,0,0,0,0
+,Cambrian Explosion -,Methodology:,Libworks & Modules,,676,10,0,0,0,0
+,Cambrian Explosion -,Methodology:,Design Patterns,,676,10,0,0,0,0
+,Cambrian Explosion -,Measurement,GitHub Contribution#,,676,10,0,0,0,0
+,Cambrian Explosion -,Milestone:,GitHub Fork-Families,,676,10,0,0,0,0
+,Cambrian Explosion -,Milestone:,Apple/Adobe/Flash,,676,10,0,0,0,0
+,Cambrian Explosion -,Milestone:,Microsoft/Silverlight,,676,10,0,0,0,0
+,Cambrian Explosion -,Milestone:,GreatHorizontalMigration,,676,10,0,0,0,0
+,Platform Wars,Browser Wars,V8,,267,0,10,0,0,0
+,Platform Wars,Browser Wars,WebKit,,267,0,10,0,0,0
+,Platform Wars,Browser Wars,SquirrelFish,,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Trident,,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Performance,Nicolas Zakas,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Performance,jsPerf.com,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,WebSockets,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,WebWorkers,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,WebStorage,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,WebRTC,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,W3C,267,0,10,0,0,0
+,Platform Wars,Browser Wars,HTML5,...,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,transforms,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,animations,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,opacity,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,shadow,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,glow,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,responsive images,267,0,10,0,0,0
+,Platform Wars,Browser Wars,CSS3,@wilto,267,0,10,0,0,0
+,Platform Wars,Browser Wars,IE Legacy,modernizer,267,0,10,0,0,0
+,Platform Wars,Browser Wars,IE Legacy,css3pie,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Measurement:,V8 increase-year,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Methodology:,feature detection,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Methodology:,cross-browser,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Methodology:,polyfills,267,0,10,0,0,0
+,Platform Wars,Browser Wars,Methodology:,shims,267,0,10,0,0,0
+,Platform Wars,Native Wars,Web Apps,,267,0,10,0,0,0
+,Platform Wars,Native Wars,Hybrid-Native Apps,,267,0,10,0,0,0
+,Platform Wars,Native Wars,Packaged Apps,,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,FireFox OS,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,WebAPI,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,Tizen,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,NodeOS,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,Intel XDE,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,Chrome OS,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,Chrome Apps,267,0,10,0,0,0
+,Platform Wars,Native Wars,JSOS,...,267,0,10,0,0,0
+,Platform Wars,Native Wars,Milestone:,Native vs. Web,267,0,10,0,0,0
+,Platform Wars,Native Wars,Milestone:,Crushing Defeat,267,0,10,0,0,0
+,Platform Wars,Native Wars,Milestone:,Zuckerberg,267,0,10,0,0,0
+,Platform Wars,Native Wars,Methodology,Cross-Platform,267,0,10,0,0,0
+,Platform Wars,Native Wars,Methodology,close to the metal,267,0,10,0,0,0
 ,Great Transmigration,TemplateB2b,,,467,0,10,0,0,0
 ,ZombieApocalypse,TemplateB2b,,,267,0,10,0,0,0
