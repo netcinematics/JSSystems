@@ -47,15 +47,22 @@
     </style>
 
 </head>
-<body style="height:900px; width:1280px; overflow:auto">
+<!--body style="height:900px; width:1280px; overflow:auto"-->
+<body>
 
-<div style="position:absolute; left:20px; top:22px;">
+<!--div style="position:absolute; left:20px; top:22px;"-->
+<div style="padding-top: 8px; padding-left: 13px;">
     <a href="http://www.adaptivepatterns.net">
         <img src="./img/jsicon1.jpeg" height="80px" style="border-radius:13px; padding:3px; border:1px lightgrey solid;">
     </a>
 </div>
 
-<div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;">
+<div class="title" style="position:absolute; left:100px; top:70px;">
+    <h3>Systems</h3>
+</div>
+
+<!--div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;"-->
+<div class="" style="">
     <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
         <li id="buttonA" class="selected">Web 2.0</li>
         <li id="buttonB">Cambrian Explosion</li>
@@ -65,16 +72,16 @@
     </ul>
 </div>
 
-<div class="title" style="position:absolute; left:100px; top:85px;">
-    <h3>Systems</h3>
-</div>
 
-<div id="footer" style="position:absolute; right:25px; top:0px;">
+<!--div id="chart" style="position: absolute; height:800; padding-top:60px; margin-bottom:100px;"-->
+<div id="chart" style="height:800; padding-top:60px; margin-bottom:100px; overflow:scroll;"></div>
+
+<!--div id="info-text" style="position:absolute; right:25px; top:0px;"-->
+<div id="info-text" style="text-aligh:right;">
     <div class="hint" style="padding-top:6px;">
-        JS Systems reads like a hollywood adventure.<br>
-        Web 2.0 erupts into Explosion,<br>
-        Two Wars, Transmigration,<br>
-        and a Zombie Apocalypse.
+        JS Systems II - a Depth & Breadth story<br><br>
+        Web 2.0, Two Wars,<br>
+        Zombie Apocalypse...
         <section class="instructions" style="margin-top:10px;">
             <i>* Try button for <i>time period.</i><br>
             <i>* And circle for <i> subsystem</i>.<br>
@@ -82,7 +89,6 @@
     </div>
 </div>
 
-<div id="chart" style="position: absolute; height:800; padding-top:60px;">
 
 <div id="toolTip" class="tooltip" style="opacity:0;">
     <div id="head" class="header"></div>
@@ -109,22 +115,23 @@
 
 </div>
 
-<footer style="position:absolute; bottom:0px; left:20px; right:50px; width=100%;">
+<!--info-text style="position:absolute; bottom:0px; left:20px; right:50px; width=100%;"-->
+<div style="width=100%;">
 
-<div style="text-align:right;">stay tuned for JSSystems III.</div>
-<div style="">made with d3</div>
-<div style="text-align:right;">...innovation in progress...</div>
-<div style="">GitHub</div>
-<div style="text-align:right;">@adaptivepattern</div>
-<div style="">...</div>
+    <div style="text-align:right;">stay tuned for JSSystems III.</div>
+    <div style="">made with d3</div>
+    <div style="text-align:right;">...innovation in progress...</div>
+    <div style="">GitHub</div>
+    <div style="text-align:right;">@adaptivepattern</div>
+    <div style="">...</div>
 
-</footer>
+</div>
 
 <script type="text/javascript" src="./d3.min.js"></script>
 <script type="text/javascript">
 /*
 http://opensource.org/licenses/BSD-3-Clause
-Copyright (c) 2014, Nash Systems
+Copyright (c) 2014, Nash JavaScript Systems
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -138,8 +145,17 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-    //-Responsive-Width-.
-    var respWidth = 1280;
+
+
+
+    //-Cross-Browser-Responsive-Width-.
+var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth,
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    var respWidth = x;
     //respWidth = 320;
 
 

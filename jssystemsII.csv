@@ -106,45 +106,45 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Cambrian Explosion -,Presentation,reveal.js,,676,10,0,0,0,0
 ,Cambrian Explosion -,Presentation,impress.js,,676,10,0,0,0,0
 ,Cambrian Explosion -,Presentation,...,,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Loaders,require.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Loaders,yepnope,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Loaders,curl,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Loaders,component,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Loaders,AMD,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Build,grunt.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Build,gulp.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,minification,uglify,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,minification,jsMin,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,minification,yui compressor,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,validation,jsLint,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,validation,jsHint,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,TwitterBootstrap,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,HTML5Boilerplate,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,Node-Webkit,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,Browserify,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,Bower,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,volo,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,kendo,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,Yeoman,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Scaffolding,...,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,DevTools,PaulIrish,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Firebug,,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,ErrorLog,Airbrake,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,ErrorLog,Sentry,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Templating,handlebars,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Templating,moustache,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Templating,jade,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,Templating,...,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,jasmine,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,istanbul,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,mocha,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,karma,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,phantom.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,cucumber.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,sinon.js,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,intern,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,QUnit,676,10,0,0,0,0
-,Cambrian Explosion -,Utility,TDD/BDD,...,676,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,requirejs,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,yepnope,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,curl,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,component,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Loaders,AMD,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Build,grunt.js,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Build,gulp.js,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,uglify,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,jsMin,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,minification,yui compressor,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,validation,jsLint,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,validation,jsHint,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,TwitterBootstrap,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,HTML5Boilerplate,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Node-Webkit,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Browserify,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Bower,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,volo,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,kendo,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,Yeoman,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Scaffolding,...,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,DevTools,PaulIrish,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Firebug,,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,ErrorLog,Airbrake,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,ErrorLog,Sentry,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,handlebars,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,moustache,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,jade,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,Templating,...,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,jasmine,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,istanbul,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,mocha,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,karma,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,phantom.js,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,cucumber.js,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,sinon.js,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,intern,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,QUnit,5,10,0,0,0,0
+,Cambrian Explosion -,Utility,TDD/BDD,...,5,10,0,0,0,0
 ,Cambrian Explosion -,Methodology:,Libworks & Modules,,676,10,0,0,0,0
 ,Cambrian Explosion -,Methodology:,Design Patterns,,676,10,0,0,0,0
 ,Cambrian Explosion -,Measurement,GitHub Contribution#,,676,10,0,0,0,0
@@ -181,18 +181,54 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Platform Wars,Native Wars,Web Apps,,267,0,10,0,0,0
 ,Platform Wars,Native Wars,Hybrid-Native Apps,,267,0,10,0,0,0
 ,Platform Wars,Native Wars,Packaged Apps,,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,FireFox OS,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,WebAPI,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,Tizen,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,NodeOS,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,Intel XDE,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,Chrome OS,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,Chrome Apps,267,0,10,0,0,0
-,Platform Wars,Native Wars,JSOS,...,267,0,10,0,0,0
 ,Platform Wars,Native Wars,Milestone:,Native vs. Web,267,0,10,0,0,0
-,Platform Wars,Native Wars,Milestone:,Crushing Defeat,267,0,10,0,0,0
+,Platform Wars,Native Wars,Milestone:,"Crushing Defeat",267,0,10,0,0,0
 ,Platform Wars,Native Wars,Milestone:,Zuckerberg,267,0,10,0,0,0
 ,Platform Wars,Native Wars,Methodology,Cross-Platform,267,0,10,0,0,0
-,Platform Wars,Native Wars,Methodology,close to the metal,267,0,10,0,0,0
-,Great Transmigration,TemplateB2b,,,467,0,10,0,0,0
-,ZombieApocalypse,TemplateB2b,,,267,0,10,0,0,0
+,Platform Wars,Native Wars,Methodology,"close to the metal",267,0,10,0,0,0
+,Platform Wars,Native Wars,Methodology,"close to the metal",267,0,10,0,0,0
+,Great Transmigration,NodeJS,Ryan Dahl,,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Methodology:,Non-Blocking IO,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Milestone:,Walmart,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Milestone:,Paypal,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Milestone:,Groupon,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Milestone:,...,467,0,10,0,0,0
+,Great Transmigration,NodeJS,NPM,Isaac Schlueter,467,0,10,0,0,0
+,Great Transmigration,NodeJS,FSJS,wakanda,467,0,10,0,0,0
+,Great Transmigration,NodeJS,FSJS,meteor,467,0,10,0,0,0
+,Great Transmigration,NodeJS,FSJS,...,467,0,10,0,0,0
+,Great Transmigration,NodeJS,MEAN,who?,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Milestone:,Microsoft and Node.js,467,0,10,0,0,0
+,Great Transmigration,NodeJS,NPM,Measurement:bypassMaven2014,467,0,10,0,0,0
+,Great Transmigration,NodeJS,NPM,Measurement:near20pkgperday,467,0,10,0,0,0
+,Great Transmigration,NodeJS,Methodology:,FullStack JavaScript,467,0,10,0,0,0
+,Great Transmigration,JS Databases,MongoDB,,467,0,10,0,0,0
+,Great Transmigration,JS Databases,CouchDB,,467,0,10,0,0,0
+,Great Transmigration,JS Databases,NoSQL,,467,0,10,0,0,0
+,Great Transmigration,JS Databases,Measurement:,highest investment ever 250m,467,0,10,0,0,0
+,Great Transmigration,JS Native,Methodology:,JSOS -replace ui,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,FireFox OS,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,WebAPI,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,Tizen,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,NodeOS,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,Intel XDE,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,Chrome OS,467,0,10,0,0,0
+,Great Transmigration,JS Native,JSOS,Chrome Apps,467,0,10,0,0,0
+,Great Transmigration,JS Native,Methodology:,first-class citizenship,467,0,10,0,0,0
+,Great Transmigration,JS Native,Win8,MSJS?,467,0,10,0,0,0
+,Great Transmigration,JS Native,iOS7,MacJS?,467,0,10,0,0,0
+,Great Transmigration,JS Native,Methodology:,"ubiquity",467,0,10,0,0,0
+,Great Transmigration,Internet of Things,johnnyfive.js,Rick Waldron,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Microcontrollers,Tessel,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Microcontrollers,Espruino,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Microcontrollers,RaspberryPi,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Microcontrollers,Arduino,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Milestone,JS on Hardware,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Methodology:,Vertical Integration,467,0,10,0,0,0
+,Great Transmigration,Internet of Things,Methodology:,"interoperability",467,0,10,0,0,0
+,ZombieApocalypse,RWD,Foundation,,267,0,10,0,0,0
+,ZombieApocalypse,RWD,Twitter Bootstrap,,267,0,10,0,0,0
+,ZombieApocalypse,RWD,HTML5 Boilerplate,Paul Irish,267,0,10,0,0,0
+,ZombieApocalypse,RWD,Milestone:,Boston Globe,267,0,10,0,0,0
+,ZombieApocalypse,RWD,Methodology:,MobileFirst,267,0,10,0,0,0
+,ZombieApocalypse,RWD,Methodology:,Luke Wroblewski,267,0,10,0,0,0
