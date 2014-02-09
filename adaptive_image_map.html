@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+    <!-- Mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link type="text/css" rel="stylesheet" href="./style.css">
     <title>JSYSTEMSII</title>
     <style>@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
@@ -29,7 +33,7 @@
         /*#chart {top: 80px;}
         #chart {overflow:auto;}*/
     }
-    @media screen and (max-width: 767px) /* MEDIA-QUERY: TABLET-LANDSCAPE - SMALLER THAN 768 WIDE */
+    @media screen and (max-width: 800px) /* MEDIA-QUERY: TABLET-LANDSCAPE - SMALLER THAN 768 WIDE */
     {
         .nytg-navigation li {float: none;}
         /*#chart {top: 200px;}*/
@@ -43,7 +47,7 @@
     @media screen and (max-width: 520px) /* MEDIA-QUERY: TABLET-PORTRAIT - SMALLER THAN 520 WIDE */
     {
     }
-    @media screen and (max-width: 350px) /* MEDIA-QUERY: MOBILE - SMALLER THAN 320 WIDE */
+    @media screen and (max-width: 360px) /* MEDIA-QUERY: MOBILE - SMALLER THAN 320 WIDE */
     {
         .instructions{display: none;}
         .info-text{right:10px;}
@@ -70,41 +74,36 @@
 <div id="info-text" style="position:absolute; right:25px; top:0px;">
 <!--div id="info-text" style="float:right;"-->
     <div class="hint" style="padding-top:6px;">
-        JS Systems II<br>
+        <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
         in Depth & Breadth review:<br>
         Web 2.0, Two Wars, TransMigration,<br>
+        <section class="instructions" style="margin-top:6px;">
         Zombie Apocalypse, "IoThings",
         <br>and more...
-        <!--section class="instructions" style="margin-top:10px;">
-            <i>and more...</i>.<br>
-        </section-->
+        </section>
     </div>
 </div>
 
 <!--div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;"-->
 <div class="" style="">
     <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
-        <li id="buttonF" class="selected">~</li>
         <li id="buttonA">Web 2.0</li>
         <li id="buttonB">Cambrian Explosion</li>
         <li id="buttonC">Platform Wars</li>
         <li id="buttonD">The Great Transmigration</li>
         <li id="buttonE">Zombie Apocalypse</li>
+        <li id="buttonF" class="selected">~</li>
     </ul>
 </div>
 <br>
 
-<!--CHART-->
-<!--div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div-->
+<!--RESPONSIVE-CHART-->
 	<div id="makeMeScrollable">
-		<!--img src="../../img/jsicon3.jpeg" width="1000px" height="800px" alt="Demo image" id="dog" /-->
-<div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div>
+		<div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div>
 	</div>
 
-
-
 <div id="toolTip" class="tooltip" style="opacity:0;">
-    <div id="head" class="header"></div>
+    <div id="head" class="header">~</div>
     <div id="header1" class="header1"></div>
     <div id="header2" class="header2"></div>
     <div style="position:absolute; left:10px">
@@ -197,7 +196,8 @@ var w = window,
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
     var respWidth = x;
     //respWidth = 320;
-
+ //alert(x);
+    respWidth = 1280
 
     var m = [20, 120, 20, 120],
             w = respWidth - m[1] - m[3],
@@ -385,16 +385,6 @@ var w = window,
             update(root);
         });
         buttonA.on("click",function (d) {
-
-            if(isMobile.any() != null){
-				$("#makeMeScrollable").smoothDivScroll({
-					hotSpotScrolling: false,
-					touchScrolling: true,
-					manualContinuousScrolling: false,
-					mousewheelScrolling: false
-				});
-            }
-
             buttonA.attr("class","selected")
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -793,6 +783,9 @@ var w = window,
 
 
         function node_onMouseOver(d) {
+
+        	if(isMobile.any()!=null)return;
+
             toolTip.transition()
                     .duration(200)
                     .style("opacity", ".9");
@@ -926,17 +919,20 @@ var w = window,
 	<!-- If you want to look at the uncompressed version you find it at
 	     js/jquery.smoothDivScroll-1.3.js -->
 
-	<!-- Plugin initialization >
+	<!-- RESPONSIVE-VIEW -->
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$("#makeMeScrollable").smoothDivScroll({
-				hotSpotScrolling: false,
-				touchScrolling: true,
-				manualContinuousScrolling: false,
-				mousewheelScrolling: false
-			});
+            /*if(isMobile.any() != null){
+            	alert('JS Systems Mobile');
+				$("#makeMeScrollable").smoothDivScroll({
+					hotSpotScrolling: false,
+					touchScrolling: true,
+					manualContinuousScrolling: false,
+					mousewheelScrolling: false
+				});
+            }*/
 		});
-	</script-->
+	</script>
 
 
 </body></html>
