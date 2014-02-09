@@ -71,19 +71,21 @@
 <!--div id="info-text" style="float:right;"-->
     <div class="hint" style="padding-top:6px;">
         JS Systems II<br>
-        a Depth & Breadth story:<br>
+        in Depth & Breadth review:<br>
         Web 2.0, Two Wars, TransMigration,<br>
-        and a Zombie Apocalypse.
-        <section class="instructions" style="margin-top:10px;">
-            <i></i>.<br>
-        </section>
+        Zombie Apocalypse, "IoThings",
+        <br>and more...
+        <!--section class="instructions" style="margin-top:10px;">
+            <i>and more...</i>.<br>
+        </section-->
     </div>
 </div>
 
 <!--div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;"-->
 <div class="" style="">
     <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
-        <li id="buttonA" class="selected">Web 2.0</li>
+        <li id="buttonF" class="selected">~</li>
+        <li id="buttonA">Web 2.0</li>
         <li id="buttonB">Cambrian Explosion</li>
         <li id="buttonC">Platform Wars</li>
         <li id="buttonD">The Great Transmigration</li>
@@ -92,8 +94,12 @@
 </div>
 <br>
 
-<!--div id="chart" style="position: absolute; height:800; padding-top:60px; margin-bottom:100px;"-->
+<!--CHART-->
+<!--div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div-->
+	<div id="makeMeScrollable">
+		<!--img src="../../img/jsicon3.jpeg" width="1000px" height="800px" alt="Demo image" id="dog" /-->
 <div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div>
+	</div>
 
 
 
@@ -135,6 +141,33 @@
 </div>
 
 <script type="text/javascript" src="./d3.min.js"></script>
+    <script type="text/javascript">
+    	/*$(document).ready(function(){
+	        //Add-JQuery-Device-Detection-.
+			$.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+		});	*/
+        /*Add-JavaScript-Device-Detection-;easy-.*/
+		isMobile = {
+		    Android: function() {
+		        return navigator.userAgent.match(/Android/i);
+		    },
+		    BlackBerry: function() {
+		        return navigator.userAgent.match(/BlackBerry/i);
+		    },
+		    iOS: function() {
+		        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		    },
+		    Opera: function() {
+		        return navigator.userAgent.match(/Opera Mini/i);
+		    },
+		    Windows: function() {
+		        return navigator.userAgent.match(/IEMobile/i);
+		    },
+		    any: function() {
+		        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		    }
+		};
+    </script>
 <script type="text/javascript">
 /*
 http://opensource.org/licenses/BSD-3-Clause
@@ -206,6 +239,7 @@ var w = window,
     var buttonC=d3.select(document.getElementById("buttonC"));
     var buttonD=d3.select(document.getElementById("buttonD"));
     var buttonE=d3.select(document.getElementById("buttonE"));
+    var buttonF=d3.select(document.getElementById("buttonF"));
 
     var divOne=d3.select(document.getElementById("divOne"));
     var divTwo=d3.select(document.getElementById("divTwo"));
@@ -278,8 +312,23 @@ var w = window,
         update(root);
 
 
+        buttonF.on("click",function (d) {
+            buttonF.attr("class","selected")
+            buttonE.attr("class",null)
+            buttonA.attr("class",null);
+            buttonB.attr("class",null);
+            buttonC.attr("class",null);
+            buttonD.attr("class",null);
+            divOne.attr("class","selected")
+            divTwo.attr("class",null);
+            divThree.attr("class",null);
+            fieldOne="columnDataFive";
+            setup();
+            update(root);
+        });
         buttonE.on("click",function (d) {
             buttonE.attr("class","selected")
+            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -293,6 +342,7 @@ var w = window,
         });
         buttonD.on("click",function (d) {
             buttonD.attr("class","selected")
+            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -307,6 +357,7 @@ var w = window,
         buttonC.on("click",function (d) {
             buttonC.attr("class","selected")
             buttonB.attr("class",null);
+            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
@@ -321,6 +372,7 @@ var w = window,
         buttonB.on("click",function (d) {
             buttonB.attr("class","selected")
             buttonA.attr("class",null);
+            buttonF.attr("class",null);
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
@@ -333,17 +385,29 @@ var w = window,
             update(root);
         });
         buttonA.on("click",function (d) {
+
+            if(isMobile.any() != null){
+				$("#makeMeScrollable").smoothDivScroll({
+					hotSpotScrolling: false,
+					touchScrolling: true,
+					manualContinuousScrolling: false,
+					mousewheelScrolling: false
+				});
+            }
+
             buttonA.attr("class","selected")
             buttonB.attr("class",null);
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
+            buttonF.attr("class",null);
             divOne.attr("class","selected")
             divTwo.attr("class",null);
             divThree.attr("class",null);
             fieldOne="columnDataOne";
             setup();
             update(root);
+
         });
 
 
@@ -791,6 +855,88 @@ var w = window,
 
 </script>
 
+
+
+<!--/body></html-->
+
+<!--SCROLLING-->
+	
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="Stylesheet" type="text/css" href="./adaptiveScroll/SmoothDiv/css/smoothDivScroll.css" />
+	
+	<!-- Styles for my specific scrolling content -->
+	<style type="text/css">
+
+		#makeMeScrollable
+		{
+			width:300px;
+			height: 800px;
+			position: relative;
+		}
+		
+		/* Replace the last selector for the type of element you have in
+		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+			/* If you don't want the images in the scroller to be selectable, try the following
+			   block of code. It's just a nice feature that prevent the images from
+			   accidentally becoming selected/inverted when the user interacts with the scroller. */
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}
+	</style>
+
+
+
+	<!--div id="makeMeScrollable">
+		<img src="../../img/jsicon3.jpeg" width="1000px" height="800px" alt="Demo image" id="dog" />
+	</div-->
+
+	<!-- LOAD JAVASCRIPT LATE - JUST BEFORE THE BODY TAG 
+	     That way the browser will have loaded the images
+		 and will know the width of the images. No need to
+		 specify the width in the CSS or inline. -->
+
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+	<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="./adaptiveScroll/SmoothDiv/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+	<script src="./adaptiveScroll/SmoothDiv/js/jquery.mousewheel.min.js" type="text/javascript"></script>
+
+	<!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+	<!-- https://github.com/davetayls/jquery.kinetic/ -->
+	<script src="./adaptiveScroll/SmoothDiv/js/jquery.kinetic.min.js" type="text/javascript"></script>
+
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="./adaptiveScroll/SmoothDiv/js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+
+	<!-- If you want to look at the uncompressed version you find it at
+	     js/jquery.smoothDivScroll-1.3.js -->
+
+	<!-- Plugin initialization >
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#makeMeScrollable").smoothDivScroll({
+				hotSpotScrolling: false,
+				touchScrolling: true,
+				manualContinuousScrolling: false,
+				mousewheelScrolling: false
+			});
+		});
+	</script-->
 
 
 </body></html>

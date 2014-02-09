@@ -132,7 +132,7 @@ div.tooltipTail {
     top: 72px;
     width: 7px;
     height: 13px;
-    background: url("images/tail_white.png") 50% 0%;
+    /*background: url("images/tail_white.png") 50% 0%;*/
 }
 
 div.toolTipBody {
