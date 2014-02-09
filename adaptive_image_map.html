@@ -30,6 +30,7 @@
     /*Responsive Web Design*/
     @media screen and (min-width: 768px) /* MEDIA-QUERY: DESKTOP - 768 AND WIDER */
     {   
+    	.rightHeaderTips{padding-right: 35px;}
         /*#chart {top: 80px;}
         #chart {overflow:auto;}*/
     }
@@ -43,14 +44,16 @@
             border-radius: 4px 4px 4px 4px;
         }
         /*#chart {overflow:scroll;}*/
+    	.rightHeaderTips{padding-right:20px;}
     }
     @media screen and (max-width: 520px) /* MEDIA-QUERY: TABLET-PORTRAIT - SMALLER THAN 520 WIDE */
     {
     }
     @media screen and (max-width: 360px) /* MEDIA-QUERY: MOBILE - SMALLER THAN 320 WIDE */
     {
+    	.rightHeaderTips{padding-right:15px}
         .instructions{display: none;}
-        .info-text{right:10px;}
+        .info-text{right:3px;}
     }
 
 
@@ -59,6 +62,17 @@
 </head>
 <!--body style="height:900px; width:1280px; overflow:auto"-->
 <body>
+<div class="rightHeaderTips" style="float:right; text-align:right">
+    <div class="hint" style="padding-top:6px;">
+        <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
+        Depth & Breadth review of<br>
+        Web 2.0, Two Wars, TransMigration,<br>
+        <section class="instructions" style="margin-top:6px;">
+        Zombie Apocalypse, "IoThings",
+        <br>and more...
+        </section>
+    </div>
+</div>
 
 <!--div style="position:absolute; left:20px; top:22px;"-->
 <div style="padding-top: 8px; padding-left: 13px;">
@@ -71,8 +85,7 @@
     <h3>Systems</h3>
 </div>
 
-<div id="info-text" style="position:absolute; right:25px; top:0px;">
-<!--div id="info-text" style="float:right;"-->
+<!--div id="info-text" style="position:absolute; right:25px; top:0px;">
     <div class="hint" style="padding-top:6px;">
         <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
         in Depth & Breadth review:<br>
@@ -82,7 +95,7 @@
         <br>and more...
         </section>
     </div>
-</div>
+</div-->
 
 <!--div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;"-->
 <div class="" style="">
