@@ -65,11 +65,11 @@
 <div class="rightHeaderTips" style="float:right; text-align:right">
     <div class="hint" style="padding-top:6px;">
         <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
-        Depth & Breadth review of<br>
-        Web 2.0, Two Wars, TransMigration,<br>
-        <section class="instructions" style="margin-top:6px;">
-        Zombie Apocalypse, "IoThings",
-        <br>and more...
+        <i>A depth & breadth review</i><br>
+        Web 2.0, Two Wars, TransMigration<br>
+        <section class="instructions" style="margin-top:2px;">
+        Zombie Apocalypse, IoThings
+        <br><i>and the people who build it.</i>
         </section>
     </div>
 </div>
@@ -105,14 +105,12 @@
         <li id="buttonC">Platform Wars</li>
         <li id="buttonD">The Great Transmigration</li>
         <li id="buttonE">Zombie Apocalypse</li>
-        <li id="buttonF" class="selected">~</li>
     </ul>
 </div>
-<br>
 
 <!--RESPONSIVE-CHART-->
 	<div id="makeMeScrollable">
-		<div id="chart" style="height:800; padding-top:23px; margin-bottom:30px;"></div>
+		<div id="chart"></div>
 	</div>
 
 <div id="toolTip" class="tooltip" style="opacity:0;">
@@ -146,7 +144,7 @@
     <div style="text-align:center;">made with <a href = "http://d3js.org/">d3</a></div>
     <div style="text-align:center;">...innovation in progress...</div>
     <div style="text-align:center;">stay tuned for <a href = "#">JSSystems III.</a></div>
-    <div style="text-align:center;"><a href = "">GitHub</a></div>
+    <div style="text-align:center;"><a href = "https://github.com/JSRenaissance">GitHub</a></div>
     <div style="text-align:center;"><a href = "https://twitter.com/adaptivepattern">@adaptivepattern</a></div>
     <div style="text-align:center;">...</div>
 
@@ -214,7 +212,7 @@ var w = window,
 
     var m = [20, 120, 20, 120],
             w = respWidth - m[1] - m[3],
-            h = 700 - m[0] - m[2],
+            h = 600 - m[0] - m[2],
             i = 0,
             root = {};
 
@@ -226,8 +224,18 @@ var w = window,
     var dataFields=["DataOne","DataTwo","DataThree","DataFour","DataFive","DataSix"];
     var sourceFields=["Category","Level1","Level2","Level3","Level4"];
 
-    var colors = ["#D5252F", "#F47337", "#B02D5D", "#9B2C67", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
 
+    //-COLORS-.       1          2          3          4          5 
+    /*var colorsFour = ["#8ADB82", "#E89F4B", "#838AFF", "#FF6E4E", "#D075E8", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
+    var colorsThree = ["#FFE652", "#E8A158", "#FF6E4E", "#CF69E8", "#9796FF", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
+    var colorsTwo = ["#4DFF9A", "#8684FF", "#FF6E4E", "#E8B045", "#CF69E8", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
+    var colorsOne = ["#9CFFBE", "#E8E78C", "#FF8680", "#D785E8", "#999AFF", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
+    var colorsOriginal = ["#D5252F", "#F47337", "#B02D5D", "#9B2C67", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
+
+    var colorsReoorder2 = [ "#F47337", "#D5252F", "#B02D5D", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];
+    var colorsReorder = [  "#F47337", "#B02D5D", "#4823AF", "#982B9A", "#D5252F", "#E96B38"];
+    var colorsAgain = [ "#DBB455", "#E88756", "#FF6C68", "#DA59E8", "#9775FF", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];*/
+    var colors = [ "#FFA74A", "#E86950", "#FF5961", "#E84890", "#B132FF", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];
 
 
     var tree = d3.layout.tree();
@@ -252,7 +260,6 @@ var w = window,
     var buttonC=d3.select(document.getElementById("buttonC"));
     var buttonD=d3.select(document.getElementById("buttonD"));
     var buttonE=d3.select(document.getElementById("buttonE"));
-    var buttonF=d3.select(document.getElementById("buttonF"));
 
     var divOne=d3.select(document.getElementById("divOne"));
     var divTwo=d3.select(document.getElementById("divTwo"));
@@ -277,6 +284,17 @@ var w = window,
     var level2Radius;
     var level3Radius;
     var level4Radius;
+
+    //-RADIUS-SYSTEM-.
+    var big3 = 40;
+    var big2 = 35;
+    var big1 = 30;
+    var med3 = 25;
+    var med2 = 20;
+    var med1 = 15;
+    var sm3 = 10;
+    var sm2 = 5;
+    var sm1 = 3;
 
     var alreadySummed=false;
 
@@ -324,24 +342,8 @@ var w = window,
 
         update(root);
 
-
-        buttonF.on("click",function (d) {
-            buttonF.attr("class","selected")
-            buttonE.attr("class",null)
-            buttonA.attr("class",null);
-            buttonB.attr("class",null);
-            buttonC.attr("class",null);
-            buttonD.attr("class",null);
-            divOne.attr("class","selected")
-            divTwo.attr("class",null);
-            divThree.attr("class",null);
-            fieldOne="columnDataFive";
-            setup();
-            update(root);
-        });
         buttonE.on("click",function (d) {
             buttonE.attr("class","selected")
-            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -355,7 +357,6 @@ var w = window,
         });
         buttonD.on("click",function (d) {
             buttonD.attr("class","selected")
-            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -370,7 +371,6 @@ var w = window,
         buttonC.on("click",function (d) {
             buttonC.attr("class","selected")
             buttonB.attr("class",null);
-            buttonF.attr("class",null);
             buttonA.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
@@ -385,7 +385,6 @@ var w = window,
         buttonB.on("click",function (d) {
             buttonB.attr("class","selected")
             buttonA.attr("class",null);
-            buttonF.attr("class",null);
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
@@ -403,7 +402,6 @@ var w = window,
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
-            buttonF.attr("class",null);
             divOne.attr("class","selected")
             divTwo.attr("class",null);
             divThree.attr("class",null);
@@ -463,7 +461,7 @@ var w = window,
                     }
                 }
 
-                if ((node.parent) && (fieldOne == "column" + dataField_name)) {
+                if ((node.parent) && (fieldOne == "column" + dataField_name)) {          //-COLUMN-NAME
                     if (node.depth==1) {
                         level1Max=Math.max(level1Max,node["column" + dataField_name]);
                     }
@@ -606,7 +604,14 @@ var w = window,
 
             //Write-All-Text-Nodes
             nodeEnter.append("svg:text")
-                    .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+                    .attr("x", function(d) { 
+                    	if (d.depth==30) {}
+                    	else if (d.depth==20) {}
+                    	else if (d.depth==15) {}
+                    	else if (d.depth==10) {}
+
+                    	return d.children || d._children ? -20 : 10; 
+                    })
                     .attr("dy", ".35em")
                     .attr("text-anchor",
                     function(d) {
@@ -640,27 +645,26 @@ var w = window,
                         if (d.depth==0) {                                 //default size for trunk - in px.                            
                             return 5;
                         }
-                        //return 30;
-                        //var dataRadius = d.values[0].values[0]["columnDataOne"];
-                        //return dataRadius;
-                        
-                        else if (d.depth==1) {                              //CALL-Level - RADIUS - FACTORY-.
-                            var ret = level1Radius(d[fieldOne]);
-                            return (isNaN(ret) ? 2 : ret);
+                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE -.
+                            //var ret = level1Radius(d[fieldOne]);               //read in data -.
+                            //return (isNaN(ret) ? 2 : ret);                      //return safe data-.
+                            return med2;
                         }
                         else if (d.depth==2) {
-                            var ret = level2Radius(d[fieldOne]);
-                            return (isNaN(ret) ? 2 : ret);
+                            //var ret = level2Radius(d[fieldOne]);
+                            //return (isNaN(ret) ? 2 : ret);
+                            return sm3;
                         }
                         else if (d.depth==3) {
-                            var ret = level3Radius(d[fieldOne]);
-                            return (isNaN(ret) ? 2 : ret);
+                            //var ret = level3Radius(d[fieldOne]);
+                            //return (isNaN(ret) ? 2 : ret);
+                            return sm2;
                         }
                         else if (d.depth==4) {
-                            var ret = level4Radius(d[fieldOne]);
-                            return (isNaN(ret) ? 2 : ret);
+                            //var ret = level4Radius(d[fieldOne]);
+                            //return (isNaN(ret) ? 2 : ret);
+                            return sm1;
                         }
-                        
 
                 })
                 .style("fill", function(d) { return d.source ? d.source.linkColor: d.linkColor})
@@ -718,22 +722,26 @@ var w = window,
                     }
                 })
                 .style("stroke-width", function (d,i) {
-                                                                           //GET-RADIUS2
+                                                                           //GET-RADIUS - STROKE-.
                     if (d.source.depth==0) {
-                        var ret = level1Radius(d.target[fieldOne]) * 2;
-                        return (isNaN(ret) ? 4 : ret);
+                        //var ret = level1Radius(d.target[fieldOne]) * 2;
+                        //return (isNaN(ret) ? 4 : ret);
+                        return med2*2;
                     }
                     else if (d.source.depth==1) {
-                        var ret = level2Radius(d.target[fieldOne]) * 2;
-                        return (isNaN(ret) ? 4 : ret);
+                        //var ret = level2Radius(d.target[fieldOne]) * 2;
+                        //return (isNaN(ret) ? 4 : ret);
+                        return sm3*2;
                     }
                     else if (d.source.depth==2) {
-                        var ret = level3Radius(d.target[fieldOne]) * 2;
-                        return (isNaN(ret) ? 4 : ret);
+                        //var ret = level3Radius(d.target[fieldOne]) * 2;
+                        //return (isNaN(ret) ? 4 : ret);
+                        return sm2*2;
                     }
                     else if (d.source.depth==3) {
-                        var ret = level4Radius(d.target[fieldOne]) * 2;
-                        return (isNaN(ret) ? 4 : ret);
+                        //var ret = level4Radius(d.target[fieldOne]) * 2;
+                        //return (isNaN(ret) ? 4 : ret);
+                        return sm1*2;
                     }
                  })
                 .style("stroke-opacity", function(d){
@@ -753,29 +761,33 @@ var w = window,
                 .attr("d", diagonal);
 
          linkUpdate                                                            
-                 .style("stroke-width", function (d,i) {                          //GET-RADIUS3
+                 .style("stroke-width", function (d,i) {                          //GET-RADIUS- SHADOW-.
                      if (d.source.depth==0) {
-                         var ret = level1Radius(Number(d.target[fieldOne])) * 2;
-                         return (isNaN(ret) ? 4 : ret);
+                         //var ret = level1Radius(Number(d.target[fieldOne])) * 2;
+                         //return (isNaN(ret) ? 4 : ret);
+                         return med2*2;
                      }
                      else if (d.source.depth==1) {
-                         var ret = level2Radius(Number(d.target[fieldOne])) * 2;
-                         return (isNaN(ret) ? 4 : ret);
+                         //var ret = level2Radius(Number(d.target[fieldOne])) * 2;
+                         //return (isNaN(ret) ? 4 : ret);
+                         return sm3*2;
                      }
                      else if (d.source.depth==2) {
-                         var ret = level3Radius(Number(d.target[fieldOne])) * 2;
-                         return (isNaN(ret) ? 4 : ret);
+                         //var ret = level3Radius(Number(d.target[fieldOne])) * 2;
+                         //return (isNaN(ret) ? 4 : ret);
+                         return sm2*2;
                      }
                      else if (d.source.depth==3) {
-                         var ret = level4Radius(Number(d.target[fieldOne])) * 2;
-                         return (isNaN(ret) ? 4 : ret);
+                         //var ret = level4Radius(Number(d.target[fieldOne])) * 2;
+                         //return (isNaN(ret) ? 4 : ret);
+                         return sm1*2;
                      }
                 })
              //    .style("stroke-dasharray", function(d) {
              //       var ret=(d.target[fieldOne] > 0) ? "" : "5,8";
              //       return ret;
              //    })
-                 .style("stroke-opacity", function(d){
+                 .style("stroke-opacity", function(d){                           //SHADOW - OPACITY
                      var ret = ((d.source.depth+1)/4.5)
                      if (d.target[fieldOne] <= 0) ret=0;
                      return ret;
@@ -876,7 +888,7 @@ var w = window,
 		#makeMeScrollable
 		{
 			width:300px;
-			height: 800px;
+			height: 640px;
 			position: relative;
 		}
 		

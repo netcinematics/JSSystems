@@ -577,7 +577,7 @@ var w = window,
                         //var dataRadius = d.values[0].values[0]["columnDataOne"];
                         //return dataRadius;
                         
-                        else if (d.depth==1) {                              //CALL-Level - RADIUS - FACTORY-.
+                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE-.
                             var ret = level1Radius(d[fieldOne]);
                             return (isNaN(ret) ? 2 : ret);
                         }
@@ -651,7 +651,7 @@ var w = window,
                     }
                 })
                 .style("stroke-width", function (d,i) {
-                                                                           //GET-RADIUS2
+                                                                           //GET-RADIUS2- STROKE WIDTH-.
                     if (d.source.depth==0) {
                         var ret = level1Radius(d.target[fieldOne]) * 2;
                         return (isNaN(ret) ? 4 : ret);
