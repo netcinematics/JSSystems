@@ -65,10 +65,10 @@
 <div class="rightHeaderTips" style="float:right; text-align:right">
     <div class="hint" style="padding-top:6px;">
         <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
-        <i>A depth & breadth review</i><br>
-        Web 2.0, Two Wars, TransMigration<br>
+        A depth & breadth review of<br>
+        Web 2.0, Two Wars, Zombie Apocalypse,<br>
         <section class="instructions" style="margin-top:2px;">
-        Zombie Apocalypse, IoThings
+         TransMigration, IoT things,
         <br><i>and the people who build it.</i>
         </section>
     </div>
@@ -98,38 +98,40 @@
 </div-->
 
 <!--div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;"-->
-<div class="" style="">
+<!--div class="" style="">
     <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
         <li id="buttonA">Web 2.0</li>
         <li id="buttonB">Cambrian Explosion</li>
         <li id="buttonC">Platform Wars</li>
-        <li id="buttonD">The Great Transmigration</li>
         <li id="buttonE">Zombie Apocalypse</li>
+        <li id="buttonD">Great Transmigration</li>
+        <li id="buttonF">All</li>
     </ul>
-</div>
+</div-->
 
 <!--RESPONSIVE-CHART-->
 	<div id="makeMeScrollable">
 		<div id="chart"></div>
 	</div>
 
+<!--ToolTip-->
 <div id="toolTip" class="tooltip" style="opacity:0;">
     <div id="head" class="header">~</div>
     <div id="header1" class="header1"></div>
     <div id="header2" class="header2"></div>
     <div style="position:absolute; left:10px">
         <div id="divOne" style="width:135px; left:0px; top:10px; position: absolute;" class="selected">
-            <div class="header3"><br>PERSON</div>
+            <div class="header3"><br>Person</div>
             <div class="header-rule"></div>
             <div id="columnOne" class="header4"></div>
         </div>
         <div id="divTwo" style="width:125px; left:140px; top:10px; position: absolute;">
-            <div class="header3"><br>COMPANY</div>
+            <div class="header3"><br>Company</div>
             <div class="header-rule"></div>
             <div id="columnTwo" class="header4"></div>
         </div>
         <div id="divThree" style="width:125px; left:272px; top:10px; position: absolute;">
-            <div class="header3"><br>FACT</div>
+            <div class="header3"><br>Info/Links</div>
             <div class="header-rule"></div>
             <div id="columnThree" class="header4"></div>
         </div>
@@ -235,7 +237,7 @@ var w = window,
     var colorsReoorder2 = [ "#F47337", "#D5252F", "#B02D5D", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];
     var colorsReorder = [  "#F47337", "#B02D5D", "#4823AF", "#982B9A", "#D5252F", "#E96B38"];
     var colorsAgain = [ "#DBB455", "#E88756", "#FF6C68", "#DA59E8", "#9775FF", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];*/
-    var colors = [ "#FFA74A", "#E86950", "#FF5961", "#E84890", "#B132FF", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];
+    var colors = [ "#FFA74A", "#E86950", "#FF5961", "#E84890", "#7A4BFF", "#545FFF", "#4823AF", "#E96B38", "#9B2C67"];
 
 
     var tree = d3.layout.tree();
@@ -260,6 +262,7 @@ var w = window,
     var buttonC=d3.select(document.getElementById("buttonC"));
     var buttonD=d3.select(document.getElementById("buttonD"));
     var buttonE=d3.select(document.getElementById("buttonE"));
+    var buttonF=d3.select(document.getElementById("buttonF"));
 
     var divOne=d3.select(document.getElementById("divOne"));
     var divTwo=d3.select(document.getElementById("divTwo"));
@@ -342,8 +345,9 @@ var w = window,
 
         update(root);
 
-        buttonE.on("click",function (d) {
-            buttonE.attr("class","selected")
+        buttonF.on("click",function (d) {
+            buttonF.attr("class","selected")
+            buttonE.attr("class",null)
             buttonA.attr("class",null);
             buttonB.attr("class",null);
             buttonC.attr("class",null);
@@ -351,7 +355,21 @@ var w = window,
             divOne.attr("class","selected")
             divTwo.attr("class",null);
             divThree.attr("class",null);
-            fieldOne="columnDataFive";
+            fieldOne="columnDataOne";
+            setup();
+            update(root);
+        });
+        buttonE.on("click",function (d) {
+            buttonE.attr("class","selected")
+            buttonA.attr("class",null);
+            buttonB.attr("class",null);
+            buttonC.attr("class",null);
+            buttonD.attr("class",null);
+            buttonF.attr("class",null);
+            divOne.attr("class","selected")
+            divTwo.attr("class",null);
+            divThree.attr("class",null);
+            fieldOne="columnDataSix";
             setup();
             update(root);
         });
@@ -361,10 +379,11 @@ var w = window,
             buttonB.attr("class",null);
             buttonC.attr("class",null);
             buttonE.attr("class",null);
+            buttonF.attr("class",null);
             divOne.attr("class","selected")
             divTwo.attr("class",null);
             divThree.attr("class",null);
-            fieldOne="columnDataFour";
+            fieldOne="columnDataFive";
             setup();
             update(root);
         });
@@ -374,10 +393,11 @@ var w = window,
             buttonA.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
+            buttonF.attr("class",null);
             divThree.attr("class","selected")
             divOne.attr("class",null);
             divTwo.attr("class",null);
-            fieldOne="columnDataThree";
+            fieldOne="columnDataFour";
             //fieldTwo="columnDataThree";
             setup();
             update(root);
@@ -388,10 +408,11 @@ var w = window,
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
+            buttonF.attr("class",null);
             divTwo.attr("class","selected")
             divOne.attr("class",null);
             divThree.attr("class",null);
-            fieldOne="columnDataTwo";
+            fieldOne="columnDataThree";
             //fieldTwo="columnDataTwo";
             setup();
             update(root);
@@ -402,10 +423,11 @@ var w = window,
             buttonC.attr("class",null);
             buttonD.attr("class",null);
             buttonE.attr("class",null);
+            buttonF.attr("class",null);
             divOne.attr("class","selected")
             divTwo.attr("class",null);
             divThree.attr("class",null);
-            fieldOne="columnDataOne";
+            fieldOne="columnDataTwo";
             setup();
             update(root);
 
@@ -502,7 +524,7 @@ var w = window,
         }
 
 
-        function toggleAll(d) {                               // RECURSIVELY - ITERATE - DATA- VIA - NAMED CALLBACK PARAMETER -.
+        function toggleAll(d) {                // RECURSIVELY - ITERATE - DATA- VIA - NAMED CALLBACK PARAMETER -.
             if (d.values && d.values.actuals) {
                 d.values.actuals.forEach(toggleAll);
                 toggle(d);
@@ -590,12 +612,13 @@ var w = window,
             //Write-Trunk-Circle-Nodes
             nodeEnter.append("svg:circle")                                     //CIRCLE-.Animation
                     .attr("r", 1e-6)
-                    .on("mouseover", function(d) { node_onMouseOver(d);})
-                    .on("mouseout", function(d) {							// when the mouse leaves a circle, do the following
+                    .on("click", function(d) { node_onMouseClick(d);})
+                    //.on("mouseover", function(d) { node_onMouseOver(d);})
+                    /*.on("mouseout", function(d) {							// when the mouse leaves a circle, do the following
                         toolTip.transition()									// declare the transition properties to fade-out the div
                                 .duration(500)									// it shall take 500ms
                                 .style("opacity", "0");							// and go all the way to an opacity of nil
-                    })
+                    })*/
                     .style("fill", function(d) { return d.source ? d.source.linkColor: d.linkColor;
                     })
                     .style("fill-opacity", ".8")
@@ -603,14 +626,30 @@ var w = window,
                         });
 
             //Write-All-Text-Nodes
-            nodeEnter.append("svg:text")
+            nodeEnter.append("svg:text")                                  //-Text-Alignment
                     .attr("x", function(d) { 
-                    	if (d.depth==30) {}
-                    	else if (d.depth==20) {}
-                    	else if (d.depth==15) {}
-                    	else if (d.depth==10) {}
+                    	/*
+                    	if()
+                    	//return d.children || d._children ? -20 : 10; 
+                    	if ( d.children || d._children &&){
 
-                    	return d.children || d._children ? -20 : 10; 
+                    	} 
+                    	else{
+                    		return 10;
+                    	}*/
+
+       	                //TODO:Flip-Sides-When-Leaf-Node-.
+                    	if(d._children!=undefined && d._children.length > 0){
+	                    	if (d.depth==1) { return -30; }
+	                    	else if (d.depth==2) { return -20; }
+	                    	else if (d.depth==3) { return -15; }
+	                    	else if (d.depth==4) { return 10; }
+                    	} else {
+	                    	if (d.depth==1) { return 20; }
+	                    	else if (d.depth==2) { return 20; }
+	                    	else if (d.depth==3) { return 15; }
+	                    	else if (d.depth==4) { return 10; }                    
+	                    } 
                     })
                     .attr("dy", ".35em")
                     .attr("text-anchor",
@@ -618,18 +657,19 @@ var w = window,
                         return d.children || d._children ? "end" : "start";
                     })
                     .text(function(d) {
-                        var ret= (d.depth==4) ? d.Level4 : d.key;
+                        var ret= (d.depth==4) ? d.Level4 : d.key;    //string trimming...
                         ret = (String(ret).length > 25) ? String(ret).substr(0,22)  + "..." : ret;     //adds ellipses
                         ret = (d.depth==0) ? 'JSSystems II' : ret;                                    //ADD-ROOT-NODE-TITLE-.
                         return ret;
                     })
-                    .on("mouseover", function(d) { node_onMouseOver(d);})
+                    .on("click", function(d) { node_onMouseClick(d);})
+                    /*.on("mouseover", function(d) { node_onMouseOver(d);})
                     .on("mouseout", function(d) {							// when the mouse leaves a circle, do the following
                         toolTip.transition()									// declare the transition properties to fade-out the div
                                 .duration(500)									// it shall take 500ms
                                 .style("opacity", "0");							// and go all the way to an opacity of nil
                     })
-                    .style("fill-opacity", "0");
+                    .style("fill-opacity", "0");*/
 
 
         // Transition nodes to their new position.                       //Animate
@@ -641,30 +681,55 @@ var w = window,
 
         nodeUpdate.select("circle")
                 .attr("r", function (d) {
-
-                        if (d.depth==0) {                                 //default size for trunk - in px.                            
-                            return 5;
-                        }
-                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE -.
-                            //var ret = level1Radius(d[fieldOne]);               //read in data -.
-                            //return (isNaN(ret) ? 2 : ret);                      //return safe data-.
-                            return med2;
-                        }
-                        else if (d.depth==2) {
-                            //var ret = level2Radius(d[fieldOne]);
-                            //return (isNaN(ret) ? 2 : ret);
-                            return sm3;
-                        }
-                        else if (d.depth==3) {
-                            //var ret = level3Radius(d[fieldOne]);
-                            //return (isNaN(ret) ? 2 : ret);
-                            return sm2;
-                        }
-                        else if (d.depth==4) {
-                            //var ret = level4Radius(d[fieldOne]);
-                            //return (isNaN(ret) ? 2 : ret);
-                            return sm1;
-                        }
+                		if(fieldOne==="columnDataOne"){
+	                        if (d.depth==0) {                                 //default size for trunk - in px.
+	                            return 5;
+	                        }
+	                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE -.
+	                            //var ret = level1Radius(d[fieldOne]);               //read in data -.
+	                            //return (isNaN(ret) ? 2 : ret);                      //return safe data-.
+	                            return med2;
+	                        }
+	                        else if (d.depth==2) {
+	                            //var ret = level2Radius(d[fieldOne]);
+	                            //return (isNaN(ret) ? 2 : ret);
+	                            return sm3;
+	                        }
+	                        else if (d.depth==3) {
+	                            //var ret = level3Radius(d[fieldOne]);
+	                            //return (isNaN(ret) ? 2 : ret);
+	                            return sm2;
+	                        }
+	                        else if (d.depth==4) {
+	                            //var ret = level4Radius(d[fieldOne]);
+	                            //return (isNaN(ret) ? 2 : ret);
+	                            return sm1;
+	                        }
+	                    }else {
+	                        if (d.depth==0) {                                 //default size for trunk - in px. 
+	                            return 5;
+	                        }
+	                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE -.
+	                            var ret = level1Radius(d[fieldOne]);               //read in data -.
+	                            return (isNaN(ret) ? 2 : ret);                      //return safe data-.
+	                            //return med2;
+	                        }
+	                        else if (d.depth==2) {
+	                            var ret = level2Radius(d[fieldOne]);
+	                            return (isNaN(ret) ? 2 : ret);
+	                            //return sm3;
+	                        }
+	                        else if (d.depth==3) {
+	                            var ret = level3Radius(d[fieldOne]);
+	                            return (isNaN(ret) ? 2 : ret);
+	                            //return sm2;
+	                        }
+	                        else if (d.depth==4) {
+	                            var ret = level4Radius(d[fieldOne]);
+	                            return (isNaN(ret) ? 2 : ret);
+	                            //return sm1;
+	                        }
+	                    }   
 
                 })
                 .style("fill", function(d) { return d.source ? d.source.linkColor: d.linkColor})
@@ -819,26 +884,113 @@ var w = window,
             header2.html((d.depth > 2) ? d["source_Level3"] : "");
             if (d.depth > 3) header2.html(header2.html() + " - "  + d["source_Level4"]);
 
-            var tipX=50, tipY=30;
+            var tipX=50, tipY=150;
             //-Format-Tip-Positioning-.
             if(d.depth===2){
-                tipY=20;
+                tipY=100;
             }else if(d.depth===3){
                 tipX=250;
-                tipY=50;
+                tipY=100;
             }else if(d.depth===4){
                 tipX=400;
-                tipY=20;
+                tipY=100;
             }
 
-            toolTip.style("left", (tipX/*d3.event.pageX-30d3.event.pageX+15*/) + "px")       //SET-TOOLTIP-POSITION.
-                    .style("top", (d3.event.pageY+tipY/*d3.event.pageY-75*/) + "px");
+            /*CROSS-DEVICE SCREEN-POSITIONING
+            var scrnwidth = screen.width;
+			var scrnheight = screen.height;*/
+
+            /*Half-Center-Hover*/
+            var halfC = d3.event.pageX - 200;
+
+            /*Tip-Threshold-Y-.*/
+            var yPos = d3.event.pageY+tipY;
+            if(yPos > 900){
+            	yPos = 900;
+            }
+
+            var leftposition = halfC;
+            var topposition = yPos;
+
+             var mobiletrue = true;
+             /*TODO: user tooltip link - MOBILE/DESKTOP TIP BEHAVIOR*/
+             if(isMobile.any()){
+             	//leftposition = d3.event.PageX - 150;
+             	topposition = 900;
+             }
+
+
+            toolTip.style("left", leftposition /*halfC*/ + "px")       //SET-TOOLTIP-POSITION.
+                    .style("top", topposition/*yPos*/ + "px");
+        }
+
+
+        function node_onMouseClick(d) {
+
+        	//if(isMobile.any()!=null)return;
+
+            toolTip.transition()
+                    .duration(200)
+                    .style("opacity", ".9");
+            header.text(d["source_Level1"]);
+            header1.text((d.depth > 1) ? d["source_Level2"] : "");
+            header2.html((d.depth > 2) ? d["source_Level3"] : "");
+            if (d.depth > 3) header2.html(header2.html() + " - "  + d["source_Level4"]);
+
+            var tipX=50, tipY=150;
+            //-Format-Tip-Positioning-.
+            if(d.depth===2){
+                tipY=100;
+            }else if(d.depth===3){
+                tipX=250;
+                tipY=100;
+            }else if(d.depth===4){
+                tipX=400;
+                tipY=100;
+            }
+
+            /*CROSS-DEVICE SCREEN-POSITIONING
+            var scrnwidth = screen.width;
+			var scrnheight = screen.height;*/
+
+            /*Half-Center-Hover*/
+            var halfC = d3.event.pageX - 200;
+
+            /*Tip-Threshold-Y-.*/
+            var yPos = d3.event.pageY+tipY;
+            if(yPos > 900){
+            	yPos = 900;
+            }
+
+            var leftposition = halfC;
+            var topposition = yPos;
+
+             var mobiletrue = true;
+             /*TODO: user tooltip link - MOBILE/DESKTOP TIP BEHAVIOR*/
+             if(mobiletrue){
+             	//leftposition = d3.event.PageX - 150;
+             	topposition = 900;
+             	if (d3.event.pageY > 700 )
+             		topposition = 1000;
+             }
+
+
+            toolTip.style("left", leftposition /*halfC*/ + "px")       //SET-TOOLTIP-POSITION.
+                    .style("top", topposition/*yPos*/ + "px");
         }
 
 
 
 
     }
+
+
+//Close-Anything-Closes-DataTip-.
+//Open-Anything-Opens-It-.
+//Placed-
+
+
+
 
 /*
     function toggleButton(button) {
