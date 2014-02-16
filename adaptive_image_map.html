@@ -958,8 +958,8 @@ var w = window,
 
             /*Tip-Threshold-Y-.*/
             var yPos = d3.event.pageY+tipY;
-            if(yPos > 900){
-            	yPos = 900;
+            if(yPos > 600){
+            	yPos = 600;
             }
 
             var leftposition = halfC;
@@ -969,9 +969,11 @@ var w = window,
              /*TODO: user tooltip link - MOBILE/DESKTOP TIP BEHAVIOR*/
              if(mobiletrue){
              	//leftposition = d3.event.PageX - 150;
-             	topposition = 900;
-             	if (d3.event.pageY > 700 )
-             		topposition = 1000;
+             	topposition = 600;
+             	if (d3.event.pageY > 500 )
+             		topposition = 700;
+             	if (d3.event.pageY < 300)
+             		topposition = 500
              }
 
 
