@@ -64,12 +64,13 @@
 <body>
 <div class="rightHeaderTips" style="float:right; text-align:right">
     <div class="hint" style="padding-top:6px;">
-        <h4 style="margin-bottom: 8px; margin-top: 8px;">JS Systems II</h4>
-        A depth & breadth review of<br>
-        Web 2.0, Two Wars, Zombie Apocalypse,<br>
+        <h4 style="margin-bottom: 6px; margin-top: 8px;">Systems of the web</h4>
+        A time period review of JavaScript.<br>
+        Web 2.0, two wars, zombie apocalypse,<br>
         <section class="instructions" style="margin-top:2px;">
-         TransMigration, IoT things,
-        <br><i>and the people who build it.</i>
+         transMigration, internet of things,
+        <br><i>and the people who built it.</i>
+        <h4 style="margin-top:4px;">JS Systems II</h4>
         </section>
     </div>
 </div>
@@ -135,8 +136,9 @@
             <div class="header-rule"></div>
             <div id="columnThree" class="header4"></div>
         </div>
+        <div id="datainfo">datafo</div>
     </div>
-    <div  class="tooltipTail"></div>
+    <div  class="tooltipTail">~</div>
 
 </div>
 
@@ -223,8 +225,8 @@ var w = window,
     var fieldOne="columnDataOne";
     //var fieldTwo="columnDataOne";
     //var dataFields=["DataOne","TEST","DataTwo","DataThree"];
-    var dataFields=["DataOne","DataTwo","DataThree","DataFour","DataFive","DataSix"];
-    var sourceFields=["Category","Level1","Level2","Level3","Level4"];
+    var sourceFields=["Category","Level1","Level2","Level3","Level4","ImageData"];
+    var dataFields=["DataOne","DataThree","DataFour","DataFive","DataSix"];
 
 
     //-COLORS-.       1          2          3          4          5 
@@ -253,17 +255,21 @@ var w = window,
     var header1 = d3.select(document.getElementById("header1"));
     var header2 = d3.select(document.getElementById("header2"));
 
+    var datainfo = d3.select(document.getElementById("datainfo"));
+
     var columnOne = d3.select(document.getElementById("columnOne"));
     var columnTwo = d3.select(document.getElementById("columnTwo"));
     var columnThree = d3.select(document.getElementById("columnThree"));
-
+/*
     var buttonA=d3.select(document.getElementById("buttonA"));
     var buttonB=d3.select(document.getElementById("buttonB"));
     var buttonC=d3.select(document.getElementById("buttonC"));
     var buttonD=d3.select(document.getElementById("buttonD"));
     var buttonE=d3.select(document.getElementById("buttonE"));
     var buttonF=d3.select(document.getElementById("buttonF"));
+*/
 
+    /*Set-Tip-Selection-*/
     var divOne=d3.select(document.getElementById("divOne"));
     var divTwo=d3.select(document.getElementById("divTwo"));
     var divThree=d3.select(document.getElementById("divThree"));
@@ -344,7 +350,7 @@ var w = window,
         //toggle(root.values[0]);                                           //OPEN-DATA-BRANCH-.
 
         update(root);
-
+/*
         buttonF.on("click",function (d) {
             buttonF.attr("class","selected")
             buttonE.attr("class",null)
@@ -432,7 +438,7 @@ var w = window,
             update(root);
 
         });
-
+*/
 
         function setup() {
 
@@ -871,71 +877,29 @@ var w = window,
             d.y0 = d.y;
         });
 
-
-        function node_onMouseOver(d) {
-
-        	if(isMobile.any()!=null)return;
-
-            toolTip.transition()
-                    .duration(200)
-                    .style("opacity", ".9");
-            header.text(d["source_Level1"]);
-            header1.text((d.depth > 1) ? d["source_Level2"] : "");
-            header2.html((d.depth > 2) ? d["source_Level3"] : "");
-            if (d.depth > 3) header2.html(header2.html() + " - "  + d["source_Level4"]);
-
-            var tipX=50, tipY=150;
-            //-Format-Tip-Positioning-.
-            if(d.depth===2){
-                tipY=100;
-            }else if(d.depth===3){
-                tipX=250;
-                tipY=100;
-            }else if(d.depth===4){
-                tipX=400;
-                tipY=100;
-            }
-
-            /*CROSS-DEVICE SCREEN-POSITIONING
-            var scrnwidth = screen.width;
-			var scrnheight = screen.height;*/
-
-            /*Half-Center-Hover*/
-            var halfC = d3.event.pageX - 200;
-
-            /*Tip-Threshold-Y-.*/
-            var yPos = d3.event.pageY+tipY;
-            if(yPos > 900){
-            	yPos = 900;
-            }
-
-            var leftposition = halfC;
-            var topposition = yPos;
-
-             var mobiletrue = true;
-             /*TODO: user tooltip link - MOBILE/DESKTOP TIP BEHAVIOR*/
-             if(isMobile.any()){
-             	//leftposition = d3.event.PageX - 150;
-             	topposition = 900;
-             }
-
-
-            toolTip.style("left", leftposition /*halfC*/ + "px")       //SET-TOOLTIP-POSITION.
-                    .style("top", topposition/*yPos*/ + "px");
-        }
-
-
         function node_onMouseClick(d) {
 
         	//if(isMobile.any()!=null)return;
-
             toolTip.transition()
                     .duration(200)
                     .style("opacity", ".9");
+        												//Tri-Level-Title
             header.text(d["source_Level1"]);
             header1.text((d.depth > 1) ? d["source_Level2"] : "");
             header2.html((d.depth > 2) ? d["source_Level3"] : "");
             if (d.depth > 3) header2.html(header2.html() + " - "  + d["source_Level4"]);
+
+            /*Set-Image-In-ToolTip*/
+            if(d["source_ImageData"]!="" && d["source_ImageData"]!='0'  && d["source_ImageData"]!=undefined ){
+            //datainfo.html("HELLO");
+	            var dynimg = document.createElement("img");
+				dynimg.onload = function(e) {
+					var container = document.getElementById("datainfo");
+					container.appendChild(e.target);
+				}
+				dynimg.setAttribute("src",d["source_ImageData"]);
+				//dynimg.setAttribute("src","images/puppy.jpg");
+			}
 
             var tipX=50, tipY=150;
             //-Format-Tip-Positioning-.

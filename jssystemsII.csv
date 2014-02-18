@@ -1,21 +1,21 @@
 Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive,DataSix
-,Web 2.0,AJAX,Jessie James Garrett,,176,4,0,0,0,0
-,Web 2.0,JSON,Douglas Crockford,,176,4,0,0,0,0
-,Web 2.0,Web Services,RMI,,176,2,0,0,0,0
-,Web 2.0,Web Services,RPC,,76,2,0,0,0,0
-,Web 2.0,Web Services,DWR,,176,2,0,0,0,0
-,Web 2.0,Web Services,REST,,234,2,0,0,0,0
-,Web 2.0,Library I,Prototype,John Resig,176,4,0,0,0,0
-,Web 2.0,Library I,Script.aculo.us,,176,4,0,0,0,0
-,Web 2.0,Library I,...,,176,4,0,0,0,0
-,Web 2.0,GIS I,GoogleMaps,,176,4,0,0,0,0
-,Web 2.0,GIS I,GeoXtension,,176,4,0,0,0,0
-,Web 2.0,GIS I,GoogleEarth,,176,4,0,0,0,0
-,Web 2.0,GIS I,...,,176,4,0,0,0,0
-,Web 2.0,Milestone,AJAX/SOAP,,176,4,0,0,0,0
-,Web 2.0,Milestone,JSON/XML,,176,4,0,0,0,0
-,Web 2.0,Methodology,Asynchronous Data,,176,4,0,0,0,0
-,Web 2.0,Methodology,RIA,,176,4,0,0,0,0
+,Web 2.0,AJAX,Jessie James Garrett,,176,jjg.jpeg,0,0,0,0
+,Web 2.0,JSON,Douglas Crockford,,176,0,0,0,0,0
+,Web 2.0,Web Services,RMI,,176,0,0,0,0,0
+,Web 2.0,Web Services,RPC,,76,0,0,0,0,0
+,Web 2.0,Web Services,DWR,,176,0,0,0,0,0
+,Web 2.0,Web Services,REST,,230,0,0,0,0,0
+,Web 2.0,Library I,Prototype,John Resig,176,0,0,0,0,0
+,Web 2.0,Library I,Script.aculo.us,,176,0,0,0,0,0
+,Web 2.0,Library I,...,,176,0,0,0,0,0
+,Web 2.0,GIS I,GoogleMaps,,176,0,0,0,0,0
+,Web 2.0,GIS I,GeoXtension,,176,0,0,0,0,0
+,Web 2.0,GIS I,GoogleEarth,,176,0,0,0,0,0
+,Web 2.0,GIS I,...,,176,0,0,0,0,0
+,Web 2.0,Milestone,AJAX/SOAP,,176,0,0,0,0,0
+,Web 2.0,Milestone,JSON/XML,,176,0,0,0,0,0
+,Web 2.0,Methodology,Asynchronous Data,,176,0,0,0,0,0
+,Web 2.0,Methodology,RIA,,176,0,0,0,0,0
 ,Web 2.0,Methodology,"Good Parts",Douglas Crockford,176,1,0,0,0,0
 ,Web 2.0,Methodology,Best-Practices,Graceful Degradation,176,1,0,0,0,0
 ,Web 2.0,Methodology,Best-Practices,Progressive Enhancement,176,1,0,0,0,0
