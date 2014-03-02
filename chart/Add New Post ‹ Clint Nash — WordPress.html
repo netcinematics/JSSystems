@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://adaptivepatterns.net/blog/wp-admin/post-new.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Add New Post ‹ Clint Nash — WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var userSettings = {
+		'url': '/blog/',
+		'uid': '1',
+		'time':'1392684204'
+	},
+	ajaxurl = 'http://adaptivepatterns.net/blog/wp-admin/admin-ajax.php',
+	pagenow = 'post',
+	typenow = 'post',
+	adminpage = 'post-new-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel="stylesheet" href="./Add New Post ‹ Clint Nash — WordPress_files/load-styles.php" type="text/css" media="all">
+<link rel="stylesheet" id="thickbox-css" href="./Add New Post ‹ Clint Nash — WordPress_files/thickbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="colors-css" href="./Add New Post ‹ Clint Nash — WordPress_files/colors-fresh.css" type="text/css" media="all">
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://adaptivepatterns.net/blog/wp-admin/css/ie.css?ver=20111130' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="jetpack-css" href="./Add New Post ‹ Clint Nash — WordPress_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./Add New Post ‹ Clint Nash — WordPress_files/load-scripts.php"></script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+		<style type="text/css" id="jetpack-menu-css">
+			#toplevel_page_jetpack .wp-menu-image img { visibility: hidden; }
+			#toplevel_page_jetpack .wp-menu-image { background: url( http://adaptivepatterns.net/blog/wp-content/plugins/jetpack/_inc/images/jp-icon.png ) 0 90% no-repeat; }
+			#toplevel_page_jetpack.current .wp-menu-image, #toplevel_page_jetpack.wp-has-current-submenu .wp-menu-image, #toplevel_page_jetpack:hover .wp-menu-image { background-position: top left; }
+		</style></head>
+<body class="wp-admin js  post-new-php admin-bar branch-3-3 version-3-3 admin-color-fresh">
+<script type="text/javascript">document.body.className = document.body.className.replace('no-js','js');</script>
+
+<div id="wpwrap">
+
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<div id="adminmenushadow"></div>
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" id="menu-dashboard">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/index.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/index.php" class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" tabindex="1" aria-haspopup="true">Dashboard</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Dashboard</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/index.php" class="wp-first-item" tabindex="1">Home</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/update-core.php" tabindex="1">Updates <span class="update-plugins count-6" title="1 WordPress Update, 2 Plugin Updates, 3 Theme Updates"><span class="update-count">6</span></span></a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_jetpack menu-top-last" id="toplevel_page_jetpack"><div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=jetpack"><img src="./Add New Post ‹ Clint Nash — WordPress_files/generic.png" alt=""></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=jetpack" class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_jetpack menu-top-last" tabindex="1" aria-haspopup="true">Jetpack</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Jetpack</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=jetpack" class="wp-first-item" tabindex="1">Jetpack</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=akismet-key-config" tabindex="1">Akismet Configuration</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=akismet-stats-display" tabindex="1">Akismet Stats</a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php" class="wp-has-submenu wp-has-current-submenu wp-menu-open open-if-no-js menu-top menu-icon-post menu-top-first" tabindex="1">Posts</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Posts</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php" class="wp-first-item" tabindex="1">All Posts</a></li><li class="current"><a href="./Add New Post ‹ Clint Nash — WordPress_files/Add New Post ‹ Clint Nash — WordPress.html" class="current" tabindex="1">Add New</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/edit-tags.php?taxonomy=category" tabindex="1">Categories</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/edit-tags.php?taxonomy=post_tag" tabindex="1">Tags</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/upload.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/upload.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" tabindex="1" aria-haspopup="true">Media</a>
+	<div class="wp-submenu" style=""><div class="wp-submenu-wrap"><div class="wp-submenu-head">Media</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/upload.php" class="wp-first-item" tabindex="1">Library</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/media-new.php" tabindex="1">Add New</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" id="menu-links">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/link-manager.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/link-manager.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" tabindex="1" aria-haspopup="true">Links</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Links</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/link-manager.php" class="wp-first-item" tabindex="1">All Links</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/link-add.php" tabindex="1">Add New</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/edit-tags.php?taxonomy=link_category" tabindex="1">Link Categories</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php?post_type=page"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php?post_type=page" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" tabindex="1" aria-haspopup="true">Pages</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Pages</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/edit.php?post_type=page" class="wp-first-item" tabindex="1">All Pages</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php?post_type=page" tabindex="1">Add New</a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/edit-comments.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/edit-comments.php" class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" tabindex="1">Comments <span class="awaiting-mod count-3"><span class="pending-count">3</span></span></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" tabindex="1" aria-haspopup="true">Appearance</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Appearance</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php" class="wp-first-item" tabindex="1">Themes</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/widgets.php" tabindex="1">Widgets</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/nav-menus.php" tabindex="1">Menus</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php?page=theme_options" tabindex="1">Theme Options</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php?page=custom-background" tabindex="1">Background</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/themes.php?page=custom-header" tabindex="1">Header</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/theme-editor.php" tabindex="1">Editor</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/plugins.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/plugins.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" tabindex="1" aria-haspopup="true">Plugins <span class="update-plugins count-2"><span class="plugin-count">2</span></span></a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Plugins <span class="update-plugins count-2"><span class="plugin-count">2</span></span></div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/plugins.php" class="wp-first-item" tabindex="1">Installed Plugins</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/plugin-install.php" tabindex="1">Add New</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/plugin-editor.php" tabindex="1">Editor</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/users.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/users.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" tabindex="1" aria-haspopup="true">Users</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Users</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/users.php" class="wp-first-item" tabindex="1">All Users</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/user-new.php" tabindex="1">Add New</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/profile.php" tabindex="1">Your Profile</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/tools.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/tools.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" tabindex="1" aria-haspopup="true">Tools</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Tools</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/tools.php" class="wp-first-item" tabindex="1">Available Tools</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/import.php" tabindex="1">Import</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/export.php" tabindex="1">Export</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<div class="wp-menu-image"><a href="http://adaptivepatterns.net/blog/wp-admin/options-general.php"><br></a></div><div class="wp-menu-arrow"><div></div></div><a href="http://adaptivepatterns.net/blog/wp-admin/options-general.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" tabindex="1" aria-haspopup="true">Settings</a>
+	<div class="wp-submenu"><div class="wp-submenu-wrap"><div class="wp-submenu-head">Settings</div><ul><li class="wp-first-item"><a href="http://adaptivepatterns.net/blog/wp-admin/options-general.php" class="wp-first-item" tabindex="1">General</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-writing.php" tabindex="1">Writing</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-reading.php" tabindex="1">Reading</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-discussion.php" tabindex="1">Discussion</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-media.php" tabindex="1">Media</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-privacy.php" tabindex="1">Privacy</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-permalink.php" tabindex="1">Permalinks</a></li><li><a href="http://adaptivepatterns.net/blog/wp-admin/options-general.php?page=index-press" tabindex="1">Index Press</a></li></ul></div></div></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">
+
+
+<div id="wpbody">
+
+<div id="wpbody-content" style="overflow: hidden;">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-customize-display" class="active">
+								<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#tab-panel-customize-display">
+									Customizing This Display								</a>
+							</li>
+						
+							<li id="tab-link-title-post-editor" class="">
+								<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#tab-panel-title-post-editor">
+									Title and Post Editor								</a>
+							</li>
+						
+							<li id="tab-link-publish-box" class="">
+								<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#tab-panel-publish-box">
+									Publish Box								</a>
+							</li>
+						
+							<li id="tab-link-discussion-settings" class="">
+								<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#tab-panel-discussion-settings">
+									Discussion Settings								</a>
+							</li>
+												</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p>You can also create posts with the <a href="http://adaptivepatterns.net/blog/wp-admin/options-writing.php">Press This bookmarklet</a>.</p><p><strong>For more information:</strong></p><p><a href="http://codex.wordpress.org/Posts_Add_New_Screen" target="_blank">Documentation on Writing and Editing Posts</a></p><p><a href="http://wordpress.org/support/" target="_blank">Support Forums</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-customize-display" class="active help-tab-content">
+								<p>The title field and the big Post Editing Area are fixed in place, but you can reposition all the other boxes using drag and drop, and can minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen.</p>							</div>
+						
+							<div id="tab-panel-title-post-editor" class=" help-tab-content">
+								<p><strong>Title</strong> - Enter a title for your post. After you enter a title, you’ll see the permalink below, which you can edit.</p><p><strong>Post editor</strong> - Enter the text for your post. There are two modes of editing: Visual and HTML. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The HTML mode allows you to enter raw HTML along with your post text. You can insert media files by clicking the icons above the post editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in HTML mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular post editor.</p>							</div>
+						
+							<div id="tab-panel-publish-box" class=" help-tab-content">
+								<p><strong>Publish</strong> - You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post.</p><p><strong>Post Format</strong> - This designates how your theme will display a specific post. For example, you could have a <em>standard</em> blog post with a title and paragraphs, or a short <em>aside</em> that omits the title and contains a short text blurb. Please refer to the Codex for <a href="http://codex.wordpress.org/Post_Formats#Supported_Formats">descriptions of each post format</a>. Your theme could enable all or some of 10 possible formats.</p><p><strong>Featured Image</strong> - This allows you to associate an image with your post without inserting it. This is usually useful only if your theme makes use of the featured image as a post thumbnail on the home page, a custom header, etc.</p>							</div>
+						
+							<div id="tab-panel-discussion-settings" class=" help-tab-content">
+								<p><strong>Send Trackbacks</strong> - Trackbacks are a way to notify legacy blog systems that you’ve linked to them. Enter the URL(s) you want to send trackbacks. If you link to other WordPress sites they’ll be notified automatically using pingbacks, and this field is unnecessary.</p><p><strong>Discussion</strong> - You can turn comments and pings on or off, and if there are comments on the post, you can see them here and moderate them.</p>							</div>
+											</div>
+				</div>
+			</div>
+				<div id="screen-options-wrap" class="hidden">
+		<form id="adv-settings" action="" method="post">
+					<h5>Show on screen</h5>
+			<div class="metabox-prefs">
+				<label for="formatdiv-hide"><input class="hide-postbox-tog" name="formatdiv-hide" type="checkbox" id="formatdiv-hide" value="formatdiv" checked="checked">Format</label>
+<label for="categorydiv-hide"><input class="hide-postbox-tog" name="categorydiv-hide" type="checkbox" id="categorydiv-hide" value="categorydiv" checked="checked">Categories</label>
+<label for="tagsdiv-post_tag-hide"><input class="hide-postbox-tog" name="tagsdiv-post_tag-hide" type="checkbox" id="tagsdiv-post_tag-hide" value="tagsdiv-post_tag" checked="checked">Tags</label>
+<label for="postimagediv-hide"><input class="hide-postbox-tog" name="postimagediv-hide" type="checkbox" id="postimagediv-hide" value="postimagediv" checked="checked">Featured Image</label>
+<label for="postexcerpt-hide"><input class="hide-postbox-tog" name="postexcerpt-hide" type="checkbox" id="postexcerpt-hide" value="postexcerpt">Excerpt</label>
+<label for="trackbacksdiv-hide"><input class="hide-postbox-tog" name="trackbacksdiv-hide" type="checkbox" id="trackbacksdiv-hide" value="trackbacksdiv">Send Trackbacks</label>
+<label for="postcustom-hide"><input class="hide-postbox-tog" name="postcustom-hide" type="checkbox" id="postcustom-hide" value="postcustom">Custom Fields</label>
+<label for="commentstatusdiv-hide"><input class="hide-postbox-tog" name="commentstatusdiv-hide" type="checkbox" id="commentstatusdiv-hide" value="commentstatusdiv">Discussion</label>
+<label for="slugdiv-hide"><input class="hide-postbox-tog" name="slugdiv-hide" type="checkbox" id="slugdiv-hide" value="slugdiv">Slug</label>
+<label for="authordiv-hide"><input class="hide-postbox-tog" name="authordiv-hide" type="checkbox" id="authordiv-hide" value="authordiv">Author</label>
+				<br class="clear">
+			</div>
+					<h5>Screen Layout</h5>
+		<div class="columns-prefs">Number of Columns:				<label>
+					<input type="radio" name="screen_columns" value="1">
+					1				</label>
+								<label>
+					<input type="radio" name="screen_columns" value="2" checked="checked">
+					2				</label>
+						</div>
+				<div><input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="b829f04350"></div>
+		</form>
+		</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#contextual-help-wrap" id="contextual-help-link" class="show-settings">Help</a>
+			</div>
+					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#screen-options-wrap" id="show-settings-link" class="show-settings">Screen Options</a>
+			</div>
+				</div>
+		<div class="update-nag"><a href="http://codex.wordpress.org/Version_3.8.1">WordPress 3.8.1</a> is available! <a href="http://adaptivepatterns.net/blog/wp-admin/update-core.php">Please update now</a>.</div>		
+		
+<div class="wrap columns-2">
+<div id="icon-edit" class="icon32 icon32-posts-post"><br></div><h2>Add New Post</h2><div id="message" class="updated jetpack-message jp-connect">
+			<div class="squeezer">
+									<h4><strong>Jetpack is installed</strong> and ready to bring awesome, WordPress.com cloud-powered features to your site.</h4>
+					<p class="submit"><a href="http://adaptivepatterns.net/blog/wp-admin/admin.php?page=jetpack" class="button-primary" id="wpcom-connect">Learn More</a></p>
+							</div>
+		</div>
+<form name="post" action="http://adaptivepatterns.net/blog/wp-admin/post.php" method="post" id="post">
+<input type="hidden" id="_wpnonce" name="_wpnonce" value="1d1cd6266a"><input type="hidden" name="_wp_http_referer" value="/blog/wp-admin/post-new.php"><input type="hidden" id="user-id" name="user_ID" value="1">
+<input type="hidden" id="hiddenaction" name="action" value="editpost">
+<input type="hidden" id="originalaction" name="originalaction" value="editpost">
+<input type="hidden" id="post_author" name="post_author" value="1">
+<input type="hidden" id="post_type" name="post_type" value="post">
+<input type="hidden" id="original_post_status" name="original_post_status" value="auto-draft">
+<input type="hidden" id="referredby" name="referredby" value="http://adaptivepatterns.net/blog/wp-admin/edit.php">
+<input type="hidden" name="_wp_original_http_referer" value="http://adaptivepatterns.net/blog/wp-admin/edit.php"><input type="hidden" id="auto_draft" name="auto_draft" value="0"><input type="hidden" id="post_ID" name="post_ID" value="1418"><input type="hidden" id="autosavenonce" name="autosavenonce" value="cc361f2a12"><input type="hidden" id="meta-box-order-nonce" name="meta-box-order-nonce" value="33bb9b541d"><input type="hidden" id="closedpostboxesnonce" name="closedpostboxesnonce" value="f08cbcff90">
+<div id="poststuff" class="metabox-holder has-right-sidebar">
+<div id="side-info-column" class="inner-sidebar">
+<div id="side-sortables" class="meta-box-sortables ui-sortable"><div id="submitdiv" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Publish</span></h3>
+<div class="inside">
+<div class="submitbox" id="submitpost">
+
+<div id="minor-publishing">
+
+<div style="display:none;">
+<p class="submit"><input type="submit" name="save" id="save" class="button" value="Save"></p></div>
+
+<div id="minor-publishing-actions">
+<div id="save-action">
+<input type="submit" name="save" id="save-post" value="Save Draft" tabindex="4" class="button button-highlighted">
+<img src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" class="ajax-loading" id="draft-ajax-loading" alt="" style="visibility: hidden;">
+</div>
+
+<div id="preview-action">
+<a class="preview button" href="http://adaptivepatterns.net/blog/?p=1418&preview=true" target="wp-preview" id="post-preview" tabindex="4">Preview</a>
+<input type="hidden" name="wp-preview" id="wp-preview" value="">
+</div>
+
+<div class="clear"></div>
+</div>
+<div id="misc-publishing-actions">
+
+<div class="misc-pub-section"><label for="post_status">Status:</label>
+<span id="post-status-display">
+Draft</span>
+<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#post_status" class="edit-post-status hide-if-no-js" tabindex="4">Edit</a>
+
+<div id="post-status-select" class="hide-if-js">
+<input type="hidden" name="hidden_post_status" id="hidden_post_status" value="draft">
+<select name="post_status" id="post_status" tabindex="4">
+<option value="pending">Pending Review</option>
+<option selected="selected" value="draft">Draft</option>
+</select>
+ <a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#post_status" class="save-post-status hide-if-no-js button">OK</a>
+ <a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#post_status" class="cancel-post-status hide-if-no-js">Cancel</a>
+</div>
+
+</div>
+<div class="misc-pub-section " id="visibility">
+Visibility: <span id="post-visibility-display">Public</span>
+<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#visibility" class="edit-visibility hide-if-no-js">Edit</a>
+
+<div id="post-visibility-select" class="hide-if-js">
+<input type="hidden" name="hidden_post_password" id="hidden-post-password" value="">
+<input type="checkbox" style="display:none" name="hidden_post_sticky" id="hidden-post-sticky" value="sticky">
+<input type="hidden" name="hidden_post_visibility" id="hidden-post-visibility" value="public">
+
+
+<input type="radio" name="visibility" id="visibility-radio-public" value="public" checked="checked"> <label for="visibility-radio-public" class="selectit">Public</label><br>
+<span id="sticky-span"><input id="sticky" name="sticky" type="checkbox" value="sticky" tabindex="4"> <label for="sticky" class="selectit">Stick this post to the front page</label><br></span>
+<input type="radio" name="visibility" id="visibility-radio-password" value="password"> <label for="visibility-radio-password" class="selectit">Password protected</label><br>
+<span id="password-span"><label for="post_password">Password:</label> <input type="text" name="post_password" id="post_password" value=""><br></span>
+<input type="radio" name="visibility" id="visibility-radio-private" value="private"> <label for="visibility-radio-private" class="selectit">Private</label><br>
+
+<p>
+ <a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#visibility" class="save-post-visibility hide-if-no-js button">OK</a>
+ <a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#visibility" class="cancel-post-visibility hide-if-no-js">Cancel</a>
+</p>
+</div>
+
+</div>
+<div class="misc-pub-section curtime misc-pub-section-last">
+	<span id="timestamp">
+	Publish <b>immediately</b></span>
+	<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#edit_timestamp" class="edit-timestamp hide-if-no-js" tabindex="4">Edit</a>
+	<div id="timestampdiv" class="hide-if-js"><div class="timestamp-wrap"><select id="mm" name="mm" tabindex="4">
+			<option value="01">01-Jan</option>
+			<option value="02" selected="selected">02-Feb</option>
+			<option value="03">03-Mar</option>
+			<option value="04">04-Apr</option>
+			<option value="05">05-May</option>
+			<option value="06">06-Jun</option>
+			<option value="07">07-Jul</option>
+			<option value="08">08-Aug</option>
+			<option value="09">09-Sep</option>
+			<option value="10">10-Oct</option>
+			<option value="11">11-Nov</option>
+			<option value="12">12-Dec</option>
+</select><input type="text" id="jj" name="jj" value="17" size="2" maxlength="2" tabindex="4" autocomplete="off">, <input type="text" id="aa" name="aa" value="2014" size="4" maxlength="4" tabindex="4" autocomplete="off"> @ <input type="text" id="hh" name="hh" value="20" size="2" maxlength="2" tabindex="4" autocomplete="off"> : <input type="text" id="mn" name="mn" value="13" size="2" maxlength="2" tabindex="4" autocomplete="off"></div><input type="hidden" id="ss" name="ss" value="23">
+
+<input type="hidden" id="hidden_mm" name="hidden_mm" value="02">
+<input type="hidden" id="cur_mm" name="cur_mm" value="02">
+<input type="hidden" id="hidden_jj" name="hidden_jj" value="17">
+<input type="hidden" id="cur_jj" name="cur_jj" value="17">
+<input type="hidden" id="hidden_aa" name="hidden_aa" value="2014">
+<input type="hidden" id="cur_aa" name="cur_aa" value="2014">
+<input type="hidden" id="hidden_hh" name="hidden_hh" value="20">
+<input type="hidden" id="cur_hh" name="cur_hh" value="20">
+<input type="hidden" id="hidden_mn" name="hidden_mn" value="13">
+<input type="hidden" id="cur_mn" name="cur_mn" value="13">
+
+<p>
+<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#edit_timestamp" class="save-timestamp hide-if-no-js button">OK</a>
+<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#edit_timestamp" class="cancel-timestamp hide-if-no-js">Cancel</a>
+</p>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div id="major-publishing-actions">
+<div id="delete-action">
+<a class="submitdelete deletion" href="http://adaptivepatterns.net/blog/wp-admin/post.php?post=1418&action=trash&_wpnonce=a5f7e2102e">Move to Trash</a></div>
+
+<div id="publishing-action">
+<img src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" class="ajax-loading" id="ajax-loading" alt="" style="visibility: hidden;">
+		<input name="original_publish" type="hidden" id="original_publish" value="Publish">
+		<input type="submit" name="publish" id="publish" class="button-primary" value="Publish" tabindex="5" accesskey="p"></div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+<div id="formatdiv" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Format</span></h3>
+<div class="inside">
+	<div id="post-formats-select">
+		<input type="radio" name="post_format" class="post-format" id="post-format-0" value="0" checked="checked"> <label for="post-format-0">Standard</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-aside" value="aside"> <label for="post-format-aside">Aside</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-chat" value="chat"> <label for="post-format-chat">Chat</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-link" value="link"> <label for="post-format-link">Link</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-gallery" value="gallery"> <label for="post-format-gallery">Gallery</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-status" value="status"> <label for="post-format-status">Status</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-quote" value="quote"> <label for="post-format-quote">Quote</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-image" value="image"> <label for="post-format-image">Image</label>
+				<br><input type="radio" name="post_format" class="post-format" id="post-format-video" value="video"> <label for="post-format-video">Video</label>
+		<br>
+	</div>
+	</div>
+</div>
+<div id="categorydiv" class="postbox closed">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Categories</span></h3>
+<div class="inside">
+	<div id="taxonomy-category" class="categorydiv">
+		<ul id="category-tabs" class="category-tabs">
+			<li class="tabs"><a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#category-all" tabindex="3">All Categories</a></li>
+			<li class="hide-if-no-js"><a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#category-pop" tabindex="3">Most Used</a></li>
+		</ul>
+
+		<div id="category-pop" class="tabs-panel" style="display: none;">
+			<ul id="categorychecklist-pop" class="categorychecklist form-no-clear">
+				
+		<li id="popular-category-3" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-3" type="checkbox" value="3">
+				Clint Nash			</label>
+		</li>
+
+		
+		<li id="popular-category-28" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-28" type="checkbox" value="28">
+				DESIGN			</label>
+		</li>
+
+		
+		<li id="popular-category-14" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-14" type="checkbox" value="14">
+				HTML5			</label>
+		</li>
+
+		
+		<li id="popular-category-11" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-11" type="checkbox" value="11">
+				UX			</label>
+		</li>
+
+		
+		<li id="popular-category-4" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-4" type="checkbox" value="4">
+				CSS3			</label>
+		</li>
+
+					</ul>
+		</div>
+
+		<div id="category-all" class="tabs-panel">
+			<input type="hidden" name="post_category[]" value="0">			<ul id="categorychecklist" class="list:category categorychecklist form-no-clear">
+				
+<li id="category-3" class="popular-category"><label class="selectit"><input value="3" type="checkbox" name="post_category[]" id="in-category-3"> Clint Nash</label></li>
+
+<li id="category-4" class="popular-category"><label class="selectit"><input value="4" type="checkbox" name="post_category[]" id="in-category-4"> CSS3</label></li>
+
+<li id="category-28" class="popular-category"><label class="selectit"><input value="28" type="checkbox" name="post_category[]" id="in-category-28"> DESIGN</label></li>
+
+<li id="category-10"><label class="selectit"><input value="10" type="checkbox" name="post_category[]" id="in-category-10"> GIT</label></li>
+
+<li id="category-15"><label class="selectit"><input value="15" type="checkbox" name="post_category[]" id="in-category-15"> HOW-TO</label></li>
+
+<li id="category-14" class="popular-category"><label class="selectit"><input value="14" type="checkbox" name="post_category[]" id="in-category-14"> HTML5</label></li>
+
+<li id="category-13"><label class="selectit"><input value="13" type="checkbox" name="post_category[]" id="in-category-13"> JS</label></li>
+
+<li id="category-12"><label class="selectit"><input value="12" type="checkbox" name="post_category[]" id="in-category-12"> META</label></li>
+
+<li id="category-11" class="popular-category"><label class="selectit"><input value="11" type="checkbox" name="post_category[]" id="in-category-11"> UX</label></li>
+
+<li id="category-16"><label class="selectit"><input value="16" type="checkbox" name="post_category[]" id="in-category-16"> Web-Security</label></li>
+			</ul>
+		</div>
+				<div id="category-adder" class="wp-hidden-children">
+				<h4>
+					<a id="category-add-toggle" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#category-add" class="hide-if-no-js" tabindex="3">
+						+ Add New Category					</a>
+				</h4>
+				<p id="category-add" class="category-add wp-hidden-child">
+					<label class="screen-reader-text" for="newcategory">Add New Category</label>
+					<input type="text" name="newcategory" id="newcategory" class="form-required form-input-tip" value="New Category Name" tabindex="3" aria-required="true">
+					<label class="screen-reader-text" for="newcategory_parent">
+						Parent Category:					</label>
+					<select name="newcategory_parent" id="newcategory_parent" class="postform" tabindex="3">
+	<option value="-1">— Parent Category —</option>
+	<option class="level-0" value="3">Clint Nash</option>
+	<option class="level-0" value="4">CSS3</option>
+	<option class="level-0" value="28">DESIGN</option>
+	<option class="level-0" value="10">GIT</option>
+	<option class="level-0" value="15">HOW-TO</option>
+	<option class="level-0" value="14">HTML5</option>
+	<option class="level-0" value="13">JS</option>
+	<option class="level-0" value="12">META</option>
+	<option class="level-0" value="11">UX</option>
+	<option class="level-0" value="16">Web-Security</option>
+</select>
+					<input type="button" id="category-add-submit" class="add:categorychecklist:category-add button category-add-sumbit" value="Add New Category" tabindex="3">
+					<input type="hidden" id="_ajax_nonce-add-category" name="_ajax_nonce-add-category" value="e7f0f632ac">					<span id="category-ajax-response"></span>
+				</p>
+			</div>
+			</div>
+	</div>
+</div>
+<div id="tagsdiv-post_tag" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Tags</span></h3>
+<div class="inside">
+<div class="tagsdiv" id="post_tag">
+	<div class="jaxtag">
+	<div class="nojs-tags hide-if-js">
+	<p>Add or remove tags</p>
+	<textarea name="tax_input[post_tag]" rows="3" cols="20" class="the-tags" id="tax-input-post_tag"></textarea></div>
+ 		<div class="ajaxtag hide-if-no-js">
+		<label class="screen-reader-text" for="new-tag-post_tag">Tags</label>
+		<div class="taghint">Add New Tag</div>
+		<p><input type="text" id="new-tag-post_tag" name="newtag[post_tag]" class="newtag form-input-tip" size="16" autocomplete="off" value="">
+		<input type="button" class="button tagadd" value="Add" tabindex="3"></p>
+	</div>
+	<p class="howto">Separate tags with commas</p>
+		</div>
+	<div class="tagchecklist"></div>
+</div>
+<p class="hide-if-no-js"><a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#titlediv" class="tagcloud-link" id="link-post_tag">Choose from the most used tags</a></p>
+</div>
+</div>
+<div id="postimagediv" class="postbox ">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Featured Image</span></h3>
+<div class="inside">
+<p class="hide-if-no-js"><a title="Set featured image" href="http://adaptivepatterns.net/blog/wp-admin/media-upload.php?post_id=1418&type=image&TB_iframe=1&width=640&height=438" id="set-post-thumbnail" class="thickbox">Set featured image</a></p></div>
+</div>
+</div></div>
+
+<div id="post-body">
+<div id="post-body-content">
+<div id="titlediv">
+<div id="titlewrap">
+	<label class="hide-if-no-js" style="visibility: hidden;" id="title-prompt-text" for="title">Enter title here</label>
+	<input type="text" name="post_title" size="30" tabindex="1" value="" id="title" autocomplete="off">
+</div>
+<div class="inside">
+	<div id="edit-slug-box"><strong>Permalink:</strong>
+<span id="sample-permalink">http://adaptivepatterns.net/blog/?p=1418</span>
+<span id="change-permalinks"><a href="http://adaptivepatterns.net/blog/wp-admin/options-permalink.php" class="button" target="_blank">Change Permalinks</a></span>
+</div>
+</div>
+<input type="hidden" id="samplepermalinknonce" name="samplepermalinknonce" value="9c98283786"></div>
+
+<div id="postdivrich" class="postarea">
+
+<div id="wp-content-wrap" class="wp-editor-wrap html-active"><style type="text/css" media="screen">
+.index-press-item {font-size: 12px;}
+</style><link rel="stylesheet" id="editor-buttons-css" href="./Add New Post ‹ Clint Nash — WordPress_files/editor-buttons.css" type="text/css" media="all">
+<div id="wp-content-editor-tools" class="wp-editor-tools"><a id="content-html" class="hide-if-no-js wp-switch-editor switch-html" onclick="switchEditors.switchto(this);">HTML</a>
+<a id="content-tmce" class="hide-if-no-js wp-switch-editor switch-tmce" onclick="switchEditors.switchto(this);">Visual</a>
+<div id="wp-content-media-buttons" class="hide-if-no-js wp-media-buttons"><a href="http://adaptivepatterns.net/blog/wp-admin/media-upload.php?post_id=1418&TB_iframe=1&width=640&height=438" class="thickbox add_media" id="content-add_media" title="Add Media" onclick="return false;">Upload/Insert <img src="./Add New Post ‹ Clint Nash — WordPress_files/media-button.png" width="15" height="15"></a></div>
+</div>
+<div id="wp-content-editor-container" class="wp-editor-container"><div id="ed_toolbar" class="quicktags-toolbar"><input type="button" id="qt_content_strong" accesskey="b" class="ed_button" title="" value="b"><input type="button" id="qt_content_em" accesskey="i" class="ed_button" title="" value="i"><input type="button" id="qt_content_link" accesskey="a" class="ed_button" title="" value="link"><input type="button" id="qt_content_block" accesskey="q" class="ed_button" title="" value="b-quote"><input type="button" id="qt_content_del" accesskey="d" class="ed_button" title="" value="del"><input type="button" id="qt_content_ins" accesskey="s" class="ed_button" title="" value="ins"><input type="button" id="qt_content_img" accesskey="m" class="ed_button" title="" value="img"><input type="button" id="qt_content_ul" accesskey="u" class="ed_button" title="" value="ul"><input type="button" id="qt_content_ol" accesskey="o" class="ed_button" title="" value="ol"><input type="button" id="qt_content_li" accesskey="l" class="ed_button" title="" value="li"><input type="button" id="qt_content_code" accesskey="c" class="ed_button" title="" value="code"><input type="button" id="qt_content_more" accesskey="t" class="ed_button" title="" value="more"><input type="button" id="qt_content_spell" class="ed_button" title="Dictionary lookup" value="lookup"><input type="button" id="qt_content_close" class="ed_button" title="Close all open tags" value="close tags"><input type="button" id="qt_content_fullscreen" accesskey="f" class="ed_button" title="Toggle fullscreen mode" value="fullscreen"></div><textarea class="wp-editor-area" rows="20" tabindex="1" cols="40" name="content" id="content"></textarea></div>
+</div>
+
+
+<table id="post-status-info" cellspacing="0"><tbody><tr>
+	<td id="wp-word-count">Word count: <span class="word-count">2</span></td>
+	<td class="autosave-info">
+	<span class="autosave-message">Draft saved at 8:14:26 pm.</span>
+	</td>
+</tr></tbody></table>
+
+</div>
+
+<div id="normal-sortables" class="meta-box-sortables ui-sortable"><div id="postexcerpt" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Excerpt</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="excerpt">Excerpt</label><textarea rows="1" cols="40" name="excerpt" tabindex="6" id="excerpt"></textarea>
+<p>Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="http://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a></p>
+</div>
+</div>
+<div id="trackbacksdiv" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Send Trackbacks</span></h3>
+<div class="inside">
+<p><label for="trackback_url">Send trackbacks to:</label> <input type="text" name="trackback_url" id="trackback_url" class="code" tabindex="7" value=""><br> (Separate multiple URLs with spaces)</p>
+<p>Trackbacks are a way to notify legacy blog systems that you’ve linked to them. If you link other WordPress sites they’ll be notified automatically using <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">pingbacks</a>, no other action necessary.</p>
+</div>
+</div>
+<div id="postcustom" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Custom Fields</span></h3>
+<div class="inside">
+<div id="postcustomstuff">
+<div id="ajax-response"></div>
+
+<table id="list-table" style="display: none;">
+	<thead>
+	<tr>
+		<th class="left">Name</th>
+		<th>Value</th>
+	</tr>
+	</thead>
+	<tbody id="the-list" class="list:meta">
+	<tr><td></td></tr>
+	</tbody>
+</table><p><strong>Add New Custom Field:</strong></p>
+<table id="newmeta">
+<thead>
+<tr>
+<th class="left"><label for="metakeyselect">Name</label></th>
+<th><label for="metavalue">Value</label></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td id="newmetaleft" class="left">
+<input type="text" id="metakeyinput" name="metakeyinput" tabindex="7" value="">
+</td>
+<td><textarea id="metavalue" name="metavalue" rows="2" cols="25" tabindex="8"></textarea></td>
+</tr>
+
+<tr><td colspan="2" class="submit">
+<input type="submit" name="addmeta" id="addmetasub" class="add:the-list:newmeta" value="Add Custom Field" tabindex="9"><input type="hidden" id="_ajax_nonce-add-meta" name="_ajax_nonce-add-meta" value="4abafd3297"></td></tr>
+</tbody>
+</table>
+</div>
+<p>Custom fields can be used to add extra metadata to a post that you can <a href="http://codex.wordpress.org/Using_Custom_Fields" target="_blank">use in your theme</a>.</p>
+</div>
+</div>
+<div id="commentstatusdiv" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Discussion</span></h3>
+<div class="inside">
+<input name="advanced_view" type="hidden" value="1">
+<p class="meta-options">
+	<label for="comment_status" class="selectit"><input name="comment_status" type="checkbox" id="comment_status" value="open" checked="checked"> Allow comments.</label><br>
+	<label for="ping_status" class="selectit"><input name="ping_status" type="checkbox" id="ping_status" value="open" checked="checked"> Allow <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">trackbacks and pingbacks</a> on this page.</label>
+	</p>
+</div>
+</div>
+<div id="slugdiv" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Slug</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_name">Slug</label><input name="post_name" type="text" size="13" id="post_name" value="">
+</div>
+</div>
+<div id="authordiv" class="postbox  hide-if-js" style="">
+<div class="handlediv" title="Click to toggle"><br></div><h3 class="hndle"><span>Author</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_author_override">Author</label>
+<select name="post_author_override" id="post_author_override" class="">
+	<option value="1" selected="selected">Clint Nash</option>
+</select></div>
+</div>
+</div><div id="advanced-sortables" class="meta-box-sortables ui-sortable"></div>
+</div>
+</div>
+<br class="clear">
+</div><!-- /poststuff -->
+</form>
+</div>
+
+<form method="get" action="">
+<table style="display:none;"><tbody id="com-reply"><tr id="replyrow" style="display:none;"><td colspan="2" class="colspanchange">
+	<div id="replyhead" style="display:none;"><h5>Reply to Comment</h5></div>
+
+	<div id="edithead" style="display:none;">
+		<div class="inside">
+		<label for="author">Name</label>
+		<input type="text" name="newcomment_author" size="50" value="" tabindex="101" id="author">
+		</div>
+
+		<div class="inside">
+		<label for="author-email">E-mail</label>
+		<input type="text" name="newcomment_author_email" size="50" value="" tabindex="102" id="author-email">
+		</div>
+
+		<div class="inside">
+		<label for="author-url">URL</label>
+		<input type="text" id="author-url" name="newcomment_author_url" size="103" value="" tabindex="103">
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<div id="replycontainer">
+	<div id="wp-replycontent-wrap" class="wp-editor-wrap html-active"><div id="wp-replycontent-editor-container" class="wp-editor-container"><div id="qt_replycontent_toolbar" class="quicktags-toolbar"><input type="button" id="qt_replycontent_strong" accesskey="b" class="ed_button" title="" value="b"><input type="button" id="qt_replycontent_em" accesskey="i" class="ed_button" title="" value="i"><input type="button" id="qt_replycontent_link" accesskey="a" class="ed_button" title="" value="link"><input type="button" id="qt_replycontent_block" accesskey="q" class="ed_button" title="" value="b-quote"><input type="button" id="qt_replycontent_del" accesskey="d" class="ed_button" title="" value="del"><input type="button" id="qt_replycontent_ins" accesskey="s" class="ed_button" title="" value="ins"><input type="button" id="qt_replycontent_img" accesskey="m" class="ed_button" title="" value="img"><input type="button" id="qt_replycontent_ul" accesskey="u" class="ed_button" title="" value="ul"><input type="button" id="qt_replycontent_ol" accesskey="o" class="ed_button" title="" value="ol"><input type="button" id="qt_replycontent_li" accesskey="l" class="ed_button" title="" value="li"><input type="button" id="qt_replycontent_code" accesskey="c" class="ed_button" title="" value="code"><input type="button" id="qt_replycontent_spell" class="ed_button" title="Dictionary lookup" value="lookup"><input type="button" id="qt_replycontent_close" class="ed_button" title="Close all open tags" value="close tags"></div><textarea class="wp-editor-area" rows="20" cols="40" name="replycontent" id="replycontent"></textarea></div>
+</div>
+
+	</div>
+
+	<p id="replysubmit" class="submit">
+	<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#comments-form" class="cancel button-secondary alignleft" tabindex="106">Cancel</a>
+	<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#comments-form" class="save button-primary alignright" tabindex="104">
+	<span id="savebtn" style="display:none;">Update Comment</span>
+	<span id="replybtn" style="display:none;">Submit Reply</span></a>
+	<img class="waiting" style="display:none;" src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" alt="">
+	<span class="error" style="display:none;"></span>
+	<br class="clear">
+	</p>
+
+	<input type="hidden" name="user_ID" id="user_ID" value="1">
+	<input type="hidden" name="action" id="action" value="">
+	<input type="hidden" name="comment_ID" id="comment_ID" value="">
+	<input type="hidden" name="comment_post_ID" id="comment_post_ID" value="">
+	<input type="hidden" name="status" id="status" value="">
+	<input type="hidden" name="position" id="position" value="1">
+	<input type="hidden" name="checkbox" id="checkbox" value="0">
+	<input type="hidden" name="mode" id="mode" value="single">
+	<input type="hidden" id="_ajax_nonce-replyto-comment" name="_ajax_nonce-replyto-comment" value="4f6c54b47f"><input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="fb13b7742f"></td></tr></tbody></table>
+</form>
+
+<script type="text/javascript">
+try{document.post.title.focus();}catch(e){}
+</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="footer">
+<p id="footer-left" class="alignleft"><span id="footer-thankyou">Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.</span></p>
+<p id="footer-upgrade" class="alignright"><strong><a href="http://adaptivepatterns.net/blog/wp-admin/update-core.php">Get Version 3.8.1</a></strong></p>
+<div class="clear"></div>
+</div>
+<script type="text/javascript">list_args = {"class":"WP_Post_Comments_List_Table","screen":{"id":"post","base":"post"}};</script>
+		<div id="wpadminbar" class="" role="navigation">
+			<div class="quicklinks">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://adaptivepatterns.net/blog/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation" class=""><a class="ab-item" tabindex="10" href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://adaptivepatterns.net/blog/">Clint Nash</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-view-site" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/">Visit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updates" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/update-core.php" title="1 WordPress Update, 2 Plugin Updates, 3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">6</span></a>		</li>
+		<li id="wp-admin-bar-comments" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/edit-comments.php" title="3 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-3">3</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="./Add New Post ‹ Clint Nash — WordPress_files/Add New Post ‹ Clint Nash — WordPress.html" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post" class=""><a class="ab-item" tabindex="10" href="./Add New Post ‹ Clint Nash — WordPress_files/Add New Post ‹ Clint Nash — WordPress.html">Post</a>		</li>
+		<li id="wp-admin-bar-new-media" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-link" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/link-add.php">Link</a>		</li>
+		<li id="wp-admin-bar-new-page" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-user" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/user-new.php">User</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-my-account" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://adaptivepatterns.net/blog/wp-admin/profile.php" title="My Account">Howdy, Clint Nash</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class=" ab-submenu">
+		<li id="wp-admin-bar-user-info" class=""><a class="ab-item" tabindex="-1" href="http://adaptivepatterns.net/blog/wp-admin/profile.php"><span class="display-name">Clint Nash</span><span class="username">clintonnash</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout" class=""><a class="ab-item" tabindex="10" href="http://adaptivepatterns.net/blog/wp-login.php?action=logout&_wpnonce=8cb5bc5bb4">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+		</div>
+
+		<link rel="stylesheet" href="./Add New Post ‹ Clint Nash — WordPress_files/load-styles(1).php" type="text/css" media="all">
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};var wpAjax = {"noPerm":"You do not have permission to do that.","broken":"An unidentified error has occurred."};var autosaveL10n = {"autosaveInterval":"60","savingText":"Saving Draft\u2026","saveAlert":"The changes you made will be lost if you navigate away from this page."};var postL10n = {"ok":"OK","cancel":"Cancel","publishOn":"Publish on:","publishOnFuture":"Schedule for:","publishOnPast":"Published on:","showcomm":"Show more comments","endcomm":"No more comments found.","publish":"Publish","schedule":"Schedule","update":"Update","savePending":"Save as Pending","saveDraft":"Save Draft","private":"Private","public":"Public","publicSticky":"Public, Sticky","password":"Password Protected","privatelyPublished":"Privately Published","published":"Published"};var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/adaptivepatterns.net\/blog\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/adaptivepatterns.net\/blog\/wp-includes\/js\/thickbox\/tb-close.png"};var quicktagsL10n = {"wordLookup":"Enter a word to look up:","dictionaryLookup":"Dictionary lookup","lookup":"lookup","closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","fullscreen":"fullscreen","toggleFullscreen":"Toggle fullscreen mode"};var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No matches found."};/* ]]> */
+</script>
+<script type="text/javascript" src="./Add New Post ‹ Clint Nash — WordPress_files/load-scripts(1).php"></script>
+
+	<script type="text/javascript">
+		tinyMCEPreInit = {
+			base : "http://adaptivepatterns.net/blog/wp-includes/js/tinymce",
+			suffix : "",
+			query : "ver=345-20111127",
+			mceInit : {'content':{mode:"exact",width:"100%",theme:"advanced",skin:"wp_theme",language:"en",spellchecker_languages:"+English=en,Danish=da,Dutch=nl,Finnish=fi,French=fr,German=de,Italian=it,Polish=pl,Portuguese=pt,Spanish=es,Swedish=sv",theme_advanced_toolbar_location:"top",theme_advanced_toolbar_align:"left",theme_advanced_statusbar_location:"bottom",theme_advanced_resizing:true,theme_advanced_resize_horizontal:false,dialog_type:"modal",formats:{
+						alignleft : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'left'}},
+							{selector : 'img,table', classes : 'alignleft'}
+						],
+						aligncenter : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'center'}},
+							{selector : 'img,table', classes : 'aligncenter'}
+						],
+						alignright : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'right'}},
+							{selector : 'img,table', classes : 'alignright'}
+						],
+						strikethrough : {inline : 'del'}
+					},relative_urls:false,remove_script_host:false,convert_urls:false,remove_linebreaks:true,gecko_spellcheck:true,keep_styles:false,entities:"38,amp,60,lt,62,gt",accessibility_focus:true,tabfocus_elements:"major-publishing-actions",media_strict:false,paste_remove_styles:true,paste_remove_spans:true,paste_strip_class_attributes:"all",paste_text_use_dialog:true,extended_valid_elements:"article[*],aside[*],audio[*],canvas[*],command[*],datalist[*],details[*],embed[*],figcaption[*],figure[*],footer[*],header[*],hgroup[*],keygen[*],mark[*],meter[*],nav[*],output[*],progress[*],section[*],source[*],summary,time[*],video[*],wbr",wpeditimage_disable_captions:false,wp_fullscreen_content_css:"http://adaptivepatterns.net/blog/wp-includes/js/tinymce/plugins/wpfullscreen/css/wp-fullscreen.css",plugins:"inlinepopups,spellchecker,tabfocus,paste,media,fullscreen,wordpress,wpeditimage,wpgallery,wplink,wpdialogs,wpfullscreen",elements:"content",wpautop:true,apply_source_formatting:false,theme_advanced_buttons1:"bold,italic,strikethrough,|,bullist,numlist,blockquote,|,justifyleft,justifycenter,justifyright,|,link,unlink,wp_more,|,spellchecker,wp_fullscreen,wp_adv",theme_advanced_buttons2:"formatselect,underline,justifyfull,forecolor,|,pastetext,pasteword,removeformat,|,charmap,|,outdent,indent,|,undo,redo,wp_help",theme_advanced_buttons3:"",theme_advanced_buttons4:""}},
+			qtInit : {'content':{id:"content",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,spell,close,fullscreen"},'replycontent':{id:"replycontent",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,spell,close"}},
+			ref : {plugins:"inlinepopups,spellchecker,tabfocus,paste,media,fullscreen,wordpress,wpeditimage,wpgallery,wplink,wpdialogs,wpfullscreen",theme:"advanced",language:"en"},
+			load_ext : function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+	</script>
+<script type="text/javascript" src="./Add New Post ‹ Clint Nash — WordPress_files/wp-tinymce.php"></script>
+<script type="text/javascript" src="./Add New Post ‹ Clint Nash — WordPress_files/wp-langs-en.js"></script>
+
+	<script type="text/javascript">
+		(function(){
+			var init, ed, qt, first_init, mce = false;
+
+			if ( typeof(tinymce) == 'object' ) {
+				// mark wp_theme/ui.css as loaded
+				tinymce.DOM.files[tinymce.baseURI.getURI() + '/themes/advanced/skins/wp_theme/ui.css'] = true;
+
+				for ( ed in tinyMCEPreInit.mceInit ) {
+					if ( first_init ) {
+						init = tinyMCEPreInit.mceInit[ed] = tinymce.extend( {}, first_init, tinyMCEPreInit.mceInit[ed] );
+					} else {
+						init = first_init = tinyMCEPreInit.mceInit[ed];
+					}
+
+					if ( mce )
+						try { tinymce.init(init); } catch(e){}
+				}
+			}
+
+			if ( typeof(QTags) == 'function' ) {
+				for ( qt in tinyMCEPreInit.qtInit ) {
+					try { quicktags( tinyMCEPreInit.qtInit[qt] ); } catch(e){}
+				}
+			}
+		})();
+
+		var wpActiveEditor;
+
+		jQuery('.wp-editor-wrap').mousedown(function(e){
+			wpActiveEditor = this.id.slice(3, -5);
+		});
+
+	</script>
+	<div style="display:none;">
+	<form id="wp-link" tabindex="-1">
+	<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="aa5e8f411d">	<div id="link-selector">
+		<div id="link-options">
+			<p class="howto">Enter the destination URL</p>
+			<div>
+				<label><span>URL</span><input id="url-field" type="text" tabindex="10" name="href"></label>
+			</div>
+			<div>
+				<label><span>Title</span><input id="link-title-field" type="text" tabindex="20" name="linktitle"></label>
+			</div>
+			<div class="link-target">
+				<label><input type="checkbox" id="link-target-checkbox" tabindex="30"> Open link in a new window/tab</label>
+			</div>
+		</div>
+				<p class="howto toggle-arrow " id="internal-toggle">Or link to existing content</p>
+		<div id="search-panel" style="display:none">
+			<div class="link-search-wrapper">
+				<label>
+					<span>Search</span>
+					<input type="text" id="search-field" class="link-search-field" tabindex="60" autocomplete="off">
+					<img class="waiting" src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" alt="">
+				</label>
+			</div>
+			<div id="search-results" class="query-results">
+				<ul></ul>
+				<div class="river-waiting">
+					<img class="waiting" src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" alt="">
+				</div>
+			</div>
+			<div id="most-recent-results" class="query-results">
+				<div class="query-notice"><em>No search term specified. Showing recent items.</em></div>
+				<ul></ul>
+				<div class="river-waiting">
+					<img class="waiting" src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="submitbox">
+		<div id="wp-link-cancel">
+			<a class="submitdelete deletion" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#">Cancel</a>
+		</div>
+		<div id="wp-link-update">
+			<input type="submit" tabindex="100" value="Add Link" class="button-primary" id="wp-link-submit" name="wp-link-submit">
+		</div>
+	</div>
+	</form>
+	</div>
+		<div id="wp-fullscreen-body">
+	<div id="fullscreen-topbar">
+		<div id="wp-fullscreen-toolbar">
+			<div id="wp-fullscreen-close"><a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" onclick="fullscreen.off();return false;">Exit fullscreen</a></div>
+			<div id="wp-fullscreen-central-toolbar" style="width:792px;">
+
+			<div id="wp-fullscreen-mode-bar"><div id="wp-fullscreen-modes">
+				<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" onclick="fullscreen.switchmode(&#39;tinymce&#39;);return false;">Visual</a>
+				<a href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" onclick="fullscreen.switchmode(&#39;html&#39;);return false;">HTML</a>
+			</div></div>
+
+			<div id="wp-fullscreen-button-bar"><div id="wp-fullscreen-buttons" class="wp_themeSkin">
+	
+			<div>
+			<a title="Bold (Ctrl + B)" onclick="fullscreen.b();return false;" class="mceButton mceButtonEnabled mce_bold" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_bold" role="button" aria-pressed="false">
+			<span class="mceIcon mce_bold"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Italic (Ctrl + I)" onclick="fullscreen.i();return false;" class="mceButton mceButtonEnabled mce_italic" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_italic" role="button" aria-pressed="false">
+			<span class="mceIcon mce_italic"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Unordered list (Alt + Shift + U)" onclick="fullscreen.ul();return false;" class="mceButton mceButtonEnabled mce_bullist" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_bullist" role="button" aria-pressed="false">
+			<span class="mceIcon mce_bullist"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Ordered list (Alt + Shift + O)" onclick="fullscreen.ol();return false;" class="mceButton mceButtonEnabled mce_numlist" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_numlist" role="button" aria-pressed="false">
+			<span class="mceIcon mce_numlist"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Blockquote (Alt + Shift + Q)" onclick="fullscreen.blockquote();return false;" class="mceButton mceButtonEnabled mce_blockquote" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_blockquote" role="button" aria-pressed="false">
+			<span class="mceIcon mce_blockquote"></span>
+			</a>
+			</div>
+	
+			<div class="wp-fullscreen-both">
+			<a title="Insert/edit image (Alt + Shift + M)" onclick="fullscreen.medialib();return false;" class="mceButton mceButtonEnabled mce_image" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_image" role="button" aria-pressed="false">
+			<span class="mceIcon mce_image"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div class="wp-fullscreen-both">
+			<a title="Insert/edit link (Alt + Shift + A)" onclick="fullscreen.link();return false;" class="mceButton mceButtonEnabled mce_link" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_link" role="button" aria-pressed="false">
+			<span class="mceIcon mce_link"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Unlink (Alt + Shift + S)" onclick="fullscreen.unlink();return false;" class="mceButton mceButtonEnabled mce_unlink" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_unlink" role="button" aria-pressed="false">
+			<span class="mceIcon mce_unlink"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Help (Alt + Shift + H)" onclick="fullscreen.help();return false;" class="mceButton mceButtonEnabled mce_help" href="http://adaptivepatterns.net/blog/wp-admin/post-new.php#" id="wp_fs_help" role="button" aria-pressed="false">
+			<span class="mceIcon mce_help"></span>
+			</a>
+			</div>
+	
+			</div></div>
+
+			<div id="wp-fullscreen-save">
+				<span>Saved.</span>
+				<img src="./Add New Post ‹ Clint Nash — WordPress_files/wpspin_light.gif" alt="">
+				<input type="button" class="button-primary" value="Save" onclick="fullscreen.save();">
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="wp-fullscreen-wrap" style="width:792px;">
+				<label id="wp-fullscreen-title-prompt-text" for="wp-fullscreen-title">Enter title here</label>
+		<input type="text" id="wp-fullscreen-title" value="" autocomplete="off">
+		
+		<div id="wp-fullscreen-container">
+			<textarea id="wp_mce_fullscreen"></textarea>
+		</div>
+
+		<div id="wp-fullscreen-status">
+			<div id="wp-fullscreen-count">Word count: <span class="word-count">2</span></div>
+			<div id="wp-fullscreen-tagline">Just write.</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="fullscreen-overlay" id="fullscreen-overlay"></div>
+	<div class="fullscreen-overlay fullscreen-fader fade-600" id="fullscreen-fader"></div>
+	
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+
+
+<ul class="ac_results" style="top: 813px; left: 919px;"></ul></body></html>
