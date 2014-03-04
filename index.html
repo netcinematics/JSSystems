@@ -25,9 +25,9 @@
         .footerText { color:#999;}
         .footerText a{ text-decoration: underline; color:#888;}
 
-        .dynamicSize svg{ 
+        /*.dynamicSize svg{ 
             height:1800px;
-        }
+        }*/
     </style>
 
     <style>
@@ -35,6 +35,7 @@
     @media screen and (min-width: 768px) /* MEDIA-QUERY: DESKTOP - 768 AND WIDER */
     {   
     	.rightHeaderTips{padding-right: 35px;}
+        #chart{margin-top:55px;}
         /*#chart {top: 80px;}
         #chart {overflow:auto;}*/
     }
@@ -47,6 +48,7 @@
             border-right: solid 1px #CCC;
             border-radius: 4px 4px 4px 4px;
         }
+        #chart{margin-top:3px;}
         /*#chart {overflow:scroll;}*/
     	.rightHeaderTips{padding-right:20px;}
     }
@@ -69,7 +71,7 @@
 <div class="rightHeaderTips" style="float:right; text-align:right">
     <div class="hint" style="padding-top:6px;">
         <h4 style="margin-bottom: 6px; margin-top: 8px;">JS Systems II</h4>
-        A review of the JavaScript history:<br>
+        The story of JavaScript Computer Science.<br>
         Web 2.0, two wars, zombie apocalypse,<br>
         <section class="instructions" style="margin-top:2px;">
          transmigration, internet of things,
@@ -117,15 +119,18 @@
 <div class="nytg-navBar" style="left:0px; top:120px; padding-top:0px; margin-right:0px;">
 
     <ul class="nytg-navigation clearfix rounded" style="list-style-type:none; padding-left:13px;">
-        <li id="button1">Cambrian Explosion</li>
-        <li id="button2">JavaScript Transmigration</li>
+        <li id="button1">Web 2.0</li>
+        <li id="button2">Cambrian Explosion</li>
+        <li id="button3">Web Platform Wars</li>
+        <li id="button4">Zombie Apocalypse</li>
+        <li id="button5">Great Transmigration</li>
     </ul>
 </div>
 
 <!--RESPONSIVE-CHART-->
-	<div id="makeMeScrollable">
+	<!--div id="makeMeScrollable"-->
 		<div id="chart" class="dynamicSize"></div>
-	</div>
+	<!--/div-->
 
 <!--ToolTip-->
 <div id="toolTip" class="tooltip" style="opacity:0;">
@@ -134,13 +139,10 @@
     <div id="header2" class="header2"></div>
 
 
-<textarea id="contentText" style="position:absolute; bottom:10px; max-height:100px;min-height:100px; width:394px; resize:none; overflow-y:scroll;">Content</textarea> 
+<textarea id="contentText" style="position:absolute; bottom:10px; max-height:100px;min-height:100px; width:394px; resize:none; overflow-y:scroll;">Content Pending...</textarea> 
 
-   <!--section style="margin: 50 0 0 20; text-overflow:auto; width:300px">
-     slkdslksjflskslkjdslkjsflseiwiowwojowijdowinoowijfoiwjfoiwjeofijwefiejoijoij
-     slkdslksjflskslkjdslkjsflseiwiowwojowijdowinoowijfoiwjfoiwjeofijwefiejoijoij
-    </section>
-    <div style="position:absolute; left:10px">
+
+    <!--div style="position:absolute; left:10px">
         <div id="divOne" style="width:135px; left:0px; top:10px; position: absolute;" class="selected">
             <div class="header3"><br>Person</div>
             <div class="header-rule"></div>
@@ -168,7 +170,7 @@
     <div style="text-align:center;">made with <a href = "http://d3js.org/">d3</a></div>
     <div style="text-align:center;">...innovation in progress...</div>
     <div style="text-align:center;">stay tuned for <a href = "#">JSSystems III.</a></div>
-    <div style="text-align:center;"><a href = "https://github.com/JSRenaissance">GitHub</a></div>
+    <div style="text-align:center;"><a href = "https://github.com/JSRenaissance">contribute at GitHub</a></div>
     <div style="text-align:center;"><a href = "https://twitter.com/adaptivepattern">@adaptivepattern</a></div>
     <div style="text-align:center;">...</div>
 
@@ -229,13 +231,13 @@ var w = window,
     g = d.getElementsByTagName('body')[0],
     x = w.innerWidth || e.clientWidth || g.clientWidth,
     y = w.innerHeight|| e.clientHeight|| g.clientHeight;
-    var respWidth = x;
 
+    var respWidth = x;
     respWidth = 1280;
 
-    var m = [20, 120, 20, 120],
-            w = respWidth - m[1] - m[3],
-            h = 600 - m[0] - m[2],
+    var matrix = [20, 120, 20, 120],
+            w = respWidth - matrix[1] - matrix[3],
+            h = 600 - matrix[0] - matrix[2],
             i = 0,
             root = {};
 
@@ -247,17 +249,7 @@ var w = window,
     var sourceFields=["Category","Level1","Level2","Level3","Level4","ImageData"];
     var dataFields=["DataOne","DataThree","DataFour","DataFive","DataSix"];
 
-
     //-COLORS-.       1          2          3          4          5 
-    /*var colorsFour = ["#8ADB82", "#E89F4B", "#838AFF", "#FF6E4E", "#D075E8", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
-    var colorsThree = ["#FFE652", "#E8A158", "#FF6E4E", "#CF69E8", "#9796FF", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
-    var colorsTwo = ["#4DFF9A", "#8684FF", "#FF6E4E", "#E8B045", "#CF69E8", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
-    var colorsOne = ["#9CFFBE", "#E8E78C", "#FF8680", "#D785E8", "#999AFF", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
-    var colorsOriginal = ["#D5252F", "#F47337", "#B02D5D", "#9B2C67", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38"];
-
-    var colorsReoorder2 = [ "#F47337", "#D5252F", "#B02D5D", "#982B9A", "#692DA7", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];
-    var colorsReorder = [  "#F47337", "#B02D5D", "#4823AF", "#982B9A", "#D5252F", "#E96B38"];
-    var colorsAgain = [ "#DBB455", "#E88756", "#FF6C68", "#DA59E8", "#9775FF", "#5725AA", "#4823AF", "#E96B38", "#9B2C67"];*/
     var colors = [ "#FFA74A", "#E86950", "#FF5961", "#E84890", "#7A4BFF", "#545FFF", "#4823AF", "#E96B38", "#9B2C67"];
 
 
@@ -282,6 +274,9 @@ var w = window,
 
     var button1=d3.select(document.getElementById("button1"));
     var button2=d3.select(document.getElementById("button2"));
+    var button3=d3.select(document.getElementById("button3"));
+    var button4=d3.select(document.getElementById("button4"));
+    var button5=d3.select(document.getElementById("button5"));
     /*
     var buttonA=d3.select(document.getElementById("buttonA"));
     var buttonB=d3.select(document.getElementById("buttonB"));
@@ -301,10 +296,10 @@ var w = window,
             .projection(function(d) { return [d.y, d.x]; });
 
     var vis = d3.select("#chart").append("svg:svg")                    //svg height and width-.
-            .attr("width", w + m[1] + m[3])
-            .attr("height", h + m[0] + m[2])
+            .attr("width", w + matrix[1] + matrix[3])
+            .attr("height", h + matrix[0] + matrix[2])
             .append("svg:g")
-            .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+            .attr("transform", "translate(" + matrix[3] + "," + matrix[0] + ")");
 
     var level1Max=0;
     var level2Max=0;
@@ -464,27 +459,88 @@ var w = window,
         button1.on("click",function (d) {
             button1.attr("class","selected")
             button2.attr("class",null);
+            button3.attr("class",null);
+            button4.attr("class",null);
+            button5.attr("class",null);
             fieldOne="columnDataOne";
+
+            dynamicChartHeight(400);
+
             setup();
-            systemFocus("Cambrian Explosion");
+            systemFocus(0);
             update(root);
         });
         button2.on("click",function (d) {
-            button2.attr("class","selected")
-            button1.attr("class",null);
+            button1.attr("class",null)
+            button2.attr("class","selected");
+            button3.attr("class",null);
+            button4.attr("class",null);
+            button5.attr("class",null);
             fieldOne="columnDataOne";
+
+            dynamicChartHeight(2000);
+
             setup();
-            systemFocus("Great Transmigration");
+            systemFocus(1);
             update(root);
         });
+        button3.on("click",function (d) {
+            button1.attr("class",null)
+            button2.attr("class",null);
+            button3.attr("class","selected");
+            button4.attr("class",null);
+            button5.attr("class",null);
+            fieldOne="columnDataOne";
+
+            dynamicChartHeight(500);
+
+            setup();
+            systemFocus(2);
+            update(root);
+        });
+        button4.on("click",function (d) {
+            button1.attr("class",null)
+            button2.attr("class",null);
+            button3.attr("class",null);
+            button4.attr("class","selected");
+            button5.attr("class",null);
+            fieldOne="columnDataOne";
+
+            dynamicChartHeight(400);
+
+            setup();
+            systemFocus(3);
+            update(root);
+        });
+        button5.on("click",function (d) {
+            button1.attr("class",null)
+            button2.attr("class",null);
+            button3.attr("class",null);
+            button4.attr("class",null);
+            button5.attr("class","selected");
+            fieldOne="columnDataOne";
+
+            dynamicChartHeight(650);
+
+            setup();
+            systemFocus(4);
+            update(root);
+        });
+
+
+        function dynamicChartHeight(chartHeight){
+            tree.size([chartHeight, 1280]);
+            $('#chart svg').attr("height",(chartHeight+80)+"px");
+        }
 
 
         function systemFocus(selection) {
         	var targetNode;
+            var selectionTitle = root.values[selection].key;
         	//Loop-Root-Values-.
         	for(var i=0; i < root.values.length; i++){
         		//if(selection===root.values[i].key)
-        	    recursiveIterator(root.values[i], selection);
+        	    recursiveIterator(root.values[i], selectionTitle);
         	}
         };
 
@@ -492,8 +548,20 @@ var w = window,
         	if(d.key===target||target===true){
                 if(d._children!=null && d._children.length>0){
             		//Expand-.
-            		//setSystemFocus(d, true);
-                    toggle(d);
+                    //if(d.depth<=3)
+                        // if(d.values[0]['data_Level'+d.depth]==='b1') {
+                        //    debugger;
+                        //}
+                        var notEmpty = false;
+                        var nextLevel = d.depth+1;
+                        d.values.forEach(function(item){
+                            if(item['data_Level'+nextLevel]!=null && item['data_Level'+nextLevel]!='')
+                                notEmpty = true;
+                        })
+                       if(notEmpty){//||d['Level4']!='') 
+            		     setSystemFocus(d, true);
+                       }
+                    //toggle(d);
             		//Recurse-.
             		//if(d.values!=null){
     		        	for(var i=0; i < d.values.length; i++){
@@ -503,7 +571,9 @@ var w = window,
                 }   
         	} else {
         		//Collapse-.
-        		//setSystemFocus(d,false);
+                if(d.children!=null && d.children.length>0){
+        		  setSystemFocus(d,false);
+                }
         	}
         }
 
@@ -602,9 +672,9 @@ var w = window,
                     for (var i=0; i < sourceFields.length; i++) {
                         var sourceField=sourceFields[i];
                         if (child[sourceField] != undefined) {
-                            child["source_" + sourceField] = child[sourceField];
+                            child["data_" + sourceField] = child[sourceField];
                         }
-                        parent["source_" + sourceField] = (child["source_" + sourceField]) ? child["source_" + sourceField] : child[sourceField];
+                        parent["data_" + sourceField] = (child["data_" + sourceField]) ? child["data_" + sourceField] : child[sourceField];
                     }
                 }
 
@@ -686,21 +756,7 @@ var w = window,
                     return "translate(" + source.y0 + "," + source.x0 + ")";
                 })
                 .on("click", function(d) {                                           //Click-Handler-.
-                    //check to see if kids are all blank.
-                    var realNode = false;
-                    if(d.values){
-                        d.values.forEach(function (d){
-                            if(d['Level'+d.depth] != '') {                                // hide blank nodes-.
-                                realNode = true;
-                                return false;
-                            }  
-                        });
-                    }
 
-                    if(realNode){
-                        toggle(d);
-                        update(d);
-                    }
 
                 });
 
@@ -708,7 +764,25 @@ var w = window,
             //Write-Trunk-Circle-Nodes
             nodeEnter.append("svg:circle")                                     //CIRCLE-.Animation
                     .attr("r", 1e-6)
-                    .on("click", function(d) { node_onMouseClick(d);})
+                    .on("click", function(d) { 
+                            //check to see if kids are all blank.
+                            var realNode = false;
+                            if(d.values!=null){
+                                d.values.forEach(function (d2){
+                                    if( (d2.values!=null && d2.values[0]['data_Level'+d2.depth] != '') || d2['Level4']!='') {                                // hide blank nodes-.
+                                        realNode = true;
+                                        return false;
+                                    }  
+                                });
+                            }
+
+                            if(realNode){
+                                toggle(d);
+                                update(d);
+                            }
+
+                            showTooltip(d,false);
+                    })
                     //.on("mouseover", function(d) { node_onMouseOver(d);})
                     /*.on("mouseout", function(d) {							// when the mouse leaves a circle, do the following
                         toolTip.transition()									// declare the transition properties to fade-out the div
@@ -724,48 +798,46 @@ var w = window,
             //Write-All-Text-Nodes
             nodeEnter.append("svg:text")                                  //-Text-Alignment
                     .attr("x", function(d) { 
-                    	/*
-                    	if()
-                    	//return d.children || d._children ? -20 : 10; 
-                    	if ( d.children || d._children &&){
-
-                    	} 
-                    	else{
-                    		return 10;
-                    	}*/
-
-       	                //TODO:Flip-Sides-When-Leaf-Node-.
-                    	if(d._children!=undefined && d._children.length > 0){
-	                    	if (d.depth==1) { return -30; }
-	                    	else if (d.depth==2) { return -20; }
-	                    	else if (d.depth==3) { return -15; }
-	                    	else if (d.depth==4) { return 10; }
-                    	} else {
-	                    	if (d.depth==1) { return 20; }
-	                    	else if (d.depth==2) { return 20; }
-	                    	else if (d.depth==3) { return 15; }
-	                    	else if (d.depth==4) { return 10; }                    
-	                    } 
+       	                //Flip-Sides-When-Leaf-Node-.
+                        if(d.depth===1){return -25; }
+                        if(d._children!=undefined && d._children.length > 0){
+                            if (d.depth==2) { return -20; }
+                            else if (d.depth==3) { return 10; }
+                            else if (d.depth==4) { return 10; }
+                        } else {
+                            if (d.depth==2) { return -20; }
+                            else if (d.depth==3) { return -8; }
+                            else if (d.depth==4) { return 10; }                    
+                        } 
                     })
                     .attr("dy", ".35em")
                     .attr("text-anchor",
                     function(d) {
-                        return d.children || d._children ? "end" : "start";
+                        //If-It-Is-Leaf-Align-Left-Else-Align-Right-.
+                        if(d["data_Level"+(d.depth+1)]!=null && d["data_Level"+(d.depth+1)]!=''){
+                            return "end";
+                        }else
+                          return"start";
+                        //return d.children || d._children ? "end" : "start";
                     })
                     .text(function(d) {
                         var ret= (d.depth==4) ? d.Level4 : d.key;    //string trimming...
-                        ret = (String(ret).length > 25) ? String(ret).substr(0,22)  + "..." : ret;     //adds ellipses
+                        ret = (String(ret).length > 50) ? String(ret).substr(0,22)  + "..." : ret;     //adds ellipses
                         ret = (d.depth==0) ? 'JSSystems II' : ret;                                    //ADD-ROOT-NODE-TITLE-.
                         return ret;
                     })
-                    .on("click", function(d) { node_onMouseClick(d);})
-                    /*.on("mouseover", function(d) { node_onMouseOver(d);})
-                    .on("mouseout", function(d) {							// when the mouse leaves a circle, do the following
+                    /*.on("click", function(d) { 
+                        showTooltip(d);}
+                    ) //TEXT-Hover-.*/
+                    .on("mouseover", function(d) { 
+                        showTooltip(d, true);
+                    })
+                    .on("mouseout", function(d) {							// when the mouse leaves a text, do the following
                         toolTip.transition()									// declare the transition properties to fade-out the div
                                 .duration(500)									// it shall take 500ms
                                 .style("opacity", "0");							// and go all the way to an opacity of nil
                     })
-                    .style("fill-opacity", "0");*/
+                    .style("fill-opacity", "0");
 
 
         // Transition nodes to their new position.                       //Animate
@@ -782,23 +854,15 @@ var w = window,
 	                            return 5;
 	                        }
 	                        else if (d.depth==1) {                              // RADIUS -  OF - CIRCLE -.
-	                            //var ret = level1Radius(d[fieldOne]);               //read in data -.
-	                            //return (isNaN(ret) ? 2 : ret);                      //return safe data-.
 	                            return med2;
 	                        }
 	                        else if (d.depth==2) {
-	                            //var ret = level2Radius(d[fieldOne]);
-	                            //return (isNaN(ret) ? 2 : ret);
 	                            return sm3;
 	                        }
 	                        else if (d.depth==3) {
-	                            //var ret = level3Radius(d[fieldOne]);
-	                            //return (isNaN(ret) ? 2 : ret);
 	                            return sm2;
 	                        }
 	                        else if (d.depth==4) {
-	                            //var ret = level4Radius(d[fieldOne]);
-	                            //return (isNaN(ret) ? 2 : ret);
 	                            return sm1;
 	                        }
 	                    }else {
@@ -885,23 +949,15 @@ var w = window,
                 .style("stroke-width", function (d,i) {
                                                                            //GET-RADIUS - STROKE-.
                     if (d.source.depth==0) {
-                        //var ret = level1Radius(d.target[fieldOne]) * 2;
-                        //return (isNaN(ret) ? 4 : ret);
                         return med2*2;
                     }
                     else if (d.source.depth==1) {
-                        //var ret = level2Radius(d.target[fieldOne]) * 2;
-                        //return (isNaN(ret) ? 4 : ret);
                         return sm3*2;
                     }
                     else if (d.source.depth==2) {
-                        //var ret = level3Radius(d.target[fieldOne]) * 2;
-                        //return (isNaN(ret) ? 4 : ret);
                         return sm2*2;
                     }
                     else if (d.source.depth==3) {
-                        //var ret = level4Radius(d.target[fieldOne]) * 2;
-                        //return (isNaN(ret) ? 4 : ret);
                         return sm1*2;
                     }
                  })
@@ -924,23 +980,15 @@ var w = window,
          linkUpdate                                                            
                  .style("stroke-width", function (d,i) {                          //GET-RADIUS- SHADOW-.
                      if (d.source.depth==0) {
-                         //var ret = level1Radius(Number(d.target[fieldOne])) * 2;
-                         //return (isNaN(ret) ? 4 : ret);
                          return med2*2;
                      }
                      else if (d.source.depth==1) {
-                         //var ret = level2Radius(Number(d.target[fieldOne])) * 2;
-                         //return (isNaN(ret) ? 4 : ret);
                          return sm3*2;
                      }
                      else if (d.source.depth==2) {
-                         //var ret = level3Radius(Number(d.target[fieldOne])) * 2;
-                         //return (isNaN(ret) ? 4 : ret);
                          return sm2*2;
                      }
                      else if (d.source.depth==3) {
-                         //var ret = level4Radius(Number(d.target[fieldOne])) * 2;
-                         //return (isNaN(ret) ? 4 : ret);
                          return sm1*2;
                      }
                 })
@@ -967,27 +1015,27 @@ var w = window,
             d.y0 = d.y;
         });
 
-        function node_onMouseClick(d) {
+        function showTooltip(d, overrideHide) {
 
         	//if(isMobile.any()!=null)return;
             toolTip.transition()
                     .duration(200)
                     .style("opacity", ".9");
         												//Tri-Level-Title
-            header.text(d["source_Level1"]);
-            header1.text((d.depth > 1) ? d["source_Level2"] : "");
-            header2.html((d.depth > 2) ? d["source_Level3"] : "");
-            if (d.depth > 3) header2.html(header2.html() + " - "  + d["source_Level4"]);
+            header.text(d["data_Level1"]);
+            header1.text((d.depth > 1) ? d["data_Level2"] : "");
+            header2.html((d.depth > 2) ? d["data_Level3"] : "");
+            if (d.depth > 3) header2.html(header2.html() + " - "  + d["data_Level4"]);
 
             /*Set-Image-In-ToolTip
-            if(d["source_ImageData"]!="" && d["source_ImageData"]!='0'  && d["source_ImageData"]!=undefined ){
+            if(d["data_ImageData"]!="" && d["data_ImageData"]!='0'  && d["data_ImageData"]!=undefined ){
             //datainfo.html("HELLO");
 	            var dynimg = document.createElement("img");
 				dynimg.onload = function(e) {
 					var container = document.getElementById("datainfo");
 					container.appendChild(e.target);
 				}
-				dynimg.setAttribute("src",d["source_ImageData"]);
+				dynimg.setAttribute("src",d["data_ImageData"]);
 				//dynimg.setAttribute("src","images/puppy.jpg");
 			}*/
 
@@ -1038,7 +1086,7 @@ var w = window,
             toolTip.style("left", leftposition /*halfC*/ + "px")       //SET-TOOLTIP-POSITION.
                     .style("top", topposition/*yPos*/ + "px");
 
-            if(d.children!=null)                                       //Close-Tooltip-on-Contract-.
+            if(d._children!=null && !overrideHide)                             //Close-Tooltip-on-Contract-.
                 toolTip.style("display","none");
             else
                 toolTip.style("display","block");
@@ -1048,14 +1096,6 @@ var w = window,
 
 
     }
-
-
-//Close-Anything-Closes-DataTip-.
-//Open-Anything-Opens-It-.
-//Placed-
-
-
-
 
 /*
     function toggleButton(button) {
@@ -1091,41 +1131,6 @@ var w = window,
 </script>
 
 
-
-<!--SCROLLING-->
-	
-	<!-- the CSS for Smooth Div Scroll -->
-	<link rel="Stylesheet" type="text/css" href="./adaptiveScroll/SmoothDiv/css/smoothDivScroll.css" />
-	
-	<!-- Styles for my specific scrolling content -->
-	<style type="text/css">
-
-		#makeMeScrollable
-		{
-			width:300px;
-			height: 640px;
-			position: relative;
-		}
-		
-		/* Replace the last selector for the type of element you have in
-		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
-		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
-		#makeMeScrollable div.scrollableArea img
-		{
-			position: relative;
-			float: left;
-			margin: 0;
-			padding: 0;
-			/* If you don't want the images in the scroller to be selectable, try the following
-			   block of code. It's just a nice feature that prevent the images from
-			   accidentally becoming selected/inverted when the user interacts with the scroller. */
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-moz-user-select: none;
-			-o-user-select: none;
-			user-select: none;
-		}
-	</style>
 
 
 

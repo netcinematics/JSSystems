@@ -1,5 +1,5 @@
 Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive,DataSix
-,Web 2.0,AJAX,Jessie James Garrett,,176,jjg.jpeg,0,0,0,0
+,Web 2.0,AJAX,Jessie James Garrett,,176,0,0,0,0
 ,Web 2.0,JSON,Douglas Crockford,,176,0,0,0,0,0
 ,Web 2.0,Web Services,RMI,,176,0,0,0,0,0
 ,Web 2.0,Web Services,RPC,,76,0,0,0,0,0
@@ -71,8 +71,8 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Cambrian Explosion,Mobile,PhoneGap,,676,0,0,0,0,0
 ,Cambrian Explosion,Mobile,Zepto,,676,0,0,0,0,0
 ,Cambrian Explosion,Mobile,Appcellerator,,676,0,0,0,0,0
-,Cambrian Explosion,Mobile,Sencha-Touch,,676,0,0,0,0,0
-,Cambrian Explosion,Mobile,JQuery-Mobile,,676,0,0,0,0,0
+,Cambrian Explosion,Mobile,Sencha Touch,,676,0,0,0,0,0
+,Cambrian Explosion,Mobile,JQuery Mobile,,676,0,0,0,0,0
 ,Cambrian Explosion,Mobile,Apigee,,676,0,0,0,0,0
 ,Cambrian Explosion,Mobile,hammer.js,,676,0,0,0,0,0
 ,Cambrian Explosion,Mobile,WebAPI,,676,0,0,0,0,0
@@ -84,14 +84,14 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Cambrian Explosion,API,googleglass,,676,0,0,0,0,0
 ,Cambrian Explosion,API,...,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,D3,Michael Bostok,676,0,0,0,0,0
-,Cambrian Explosion,Charts,High-Charts,,676,0,0,0,0,0
+,Cambrian Explosion,Charts,HighCharts,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,Timeline.js,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,Protovis,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,JIT,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,RiskShaw,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,DC,,676,0,0,0,0,0
 ,Cambrian Explosion,Charts,Raphael,Dimitry Baranovsky,676,0,0,0,0,0
-,Cambrian Explosion,Charts,Milestone,Extensible-Families,676,0,0,0,0,0
+,Cambrian Explosion,Charts,Milestone,Extensible Families,676,0,0,0,0,0
 ,Cambrian Explosion,Sciences,GIS II,leaflet,676,0,0,0,0,0
 ,Cambrian Explosion,Sciences,GIS II,ArcGIS,676,0,0,0,0,0
 ,Cambrian Explosion,Sciences,Methodology:,GeoLocation,676,0,0,0,0,0
@@ -121,7 +121,7 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Cambrian Explosion,Utility,validation,jsHint,5,0,0,0,0,0
 ,Cambrian Explosion,Utility,Scaffolding,TwitterBootstrap,5,0,0,0,0,0
 ,Cambrian Explosion,Utility,Scaffolding,HTML5Boilerplate,5,0,0,0,0,0
-,Cambrian Explosion,Utility,Scaffolding,Node-Webkit,5,0,0,0,0,0
+,Cambrian Explosion,Utility,Scaffolding,NodeWebkit,5,0,0,0,0,0
 ,Cambrian Explosion,Utility,Scaffolding,Browserify,5,0,0,0,0,0
 ,Cambrian Explosion,Utility,Scaffolding,Bower,5,0,0,0,0,0
 ,Cambrian Explosion,Utility,Scaffolding,volo,5,0,0,0,0,0
@@ -149,7 +149,7 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Cambrian Explosion,Methodology:,Libworks & Modules,,676,0,0,0,0,0
 ,Cambrian Explosion,Methodology:,Design Patterns,,676,0,0,0,0,0
 ,Cambrian Explosion,Measurement,GitHub Contribution#,,676,0,0,0,0,0
-,Cambrian Explosion,Milestone:,GitHub Fork-Families,,676,0,0,0,0,0
+,Cambrian Explosion,Milestone:,GitHub ForkFamilies,,676,0,0,0,0,0
 ,Cambrian Explosion,Milestone:,Apple/Adobe/Flash,,676,0,0,0,0,0
 ,Cambrian Explosion,Milestone:,Microsoft/Silverlight,,676,0,0,0,0,0
 ,Cambrian Explosion,Milestone:,GreatHorizontalMigration,,676,0,0,0,0,0
@@ -174,28 +174,27 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Web Platform Wars,Browser Wars,CSS3,@wilto,267,0,0,0,0,0
 ,Web Platform Wars,Browser Wars,IE Legacy,modernizer,267,0,0,0,0,0
 ,Web Platform Wars,Browser Wars,IE Legacy,css3pie,267,0,0,0,0,0
-,Web Platform Wars,Browser Wars,Measurement:,V8 increase-year,267,0,0,0,0,0
+,Web Platform Wars,Browser Wars,Measurement:,V8 performance,267,0,0,0,0,0
 ,Web Platform Wars,Browser Wars,Methodology:,feature detection,267,0,0,0,0,0
-,Web Platform Wars,Browser Wars,Methodology:,cross-browser,267,0,0,0,0,0
+,Web Platform Wars,Browser Wars,Methodology:,crossbrowser,267,0,0,0,0,0
 ,Web Platform Wars,Browser Wars,Methodology:,polyfills,267,0,0,0,0,0
 ,Web Platform Wars,Browser Wars,Methodology:,shims,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Web Apps,,267,0,0,0,0,0
-,Web Platform Wars,Native Wars,Hybrid-Native Apps,,267,0,0,0,0,0
+,Web Platform Wars,Native Wars,HybridNative Apps,,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Packaged Apps,,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Milestone:,Native vs. Web,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Milestone:,"Crushing Defeat",267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Milestone:,Zuckerberg,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Methodology,Cross-Platform,267,0,0,0,0,0
 ,Web Platform Wars,Native Wars,Methodology,"close to the metal",267,0,0,0,0,0
-,Web Platform Wars,Native Wars,Methodology,"close to the metal",267,0,0,0,0,0
-,ZombieApocalypse,RWD,Foundation,,267,0,0,0,0,0
-,ZombieApocalypse,RWD,Twitter Bootstrap,,267,0,0,0,0,0
-,ZombieApocalypse,RWD,HTML5 Boilerplate,Paul Irish,267,0,0,0,0,0
-,ZombieApocalypse,RWD,Milestone:,Boston Globe,267,0,0,0,0,0
-,ZombieApocalypse,RWD,Methodology:,MobileFirst,267,0,0,0,0,0
-,ZombieApocalypse,RWD,Methodology:,Luke Wroblewski,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,Foundation,,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,Twitter Bootstrap,,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,HTML5 Boilerplate,Paul Irish,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,Milestone:,Boston Globe,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,Methodology:,MobileFirst,267,0,0,0,0,0
+,Zombie Apocalypse,RWD,Methodology:,Luke Wroblewski,267,0,0,0,0,0
 ,Great Transmigration,NodeJS,Ryan Dahl,,467,0,0,0,0,0
-,Great Transmigration,NodeJS,Methodology:,Non-Blocking IO,467,0,0,0,0,0
+,Great Transmigration,NodeJS,Methodology:,Non Blocking IO,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,Milestone:,Walmart,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,Milestone:,Paypal,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,Milestone:,Groupon,467,0,0,0,0,0
@@ -204,7 +203,7 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Great Transmigration,NodeJS,FSJS,wakanda,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,FSJS,meteor,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,FSJS,...,467,0,0,0,0,0
-,Great Transmigration,NodeJS,MEAN,who?,467,0,0,0,0,0
+,Great Transmigration,NodeJS,MEAN,Valeri Karpov,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,Milestone:,Microsoft and Node.js,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,NPM,Measurement:bypassMaven2014,467,0,0,0,0,0
 ,Great Transmigration,NodeJS,NPM,Measurement:near20pkgperday,467,0,0,0,0,0
@@ -221,9 +220,9 @@ Category,Level1,Level2,Level3,Level4,DataOne,DataTwo,DataThree,DataFour,DataFive
 ,Great Transmigration,JS Native,JSOS,Intel XDE,467,0,0,0,0,0
 ,Great Transmigration,JS Native,JSOS,Chrome OS,467,0,0,0,0,0
 ,Great Transmigration,JS Native,JSOS,Chrome Apps,467,0,0,0,0,0
-,Great Transmigration,JS Native,Methodology:,first-class citizenship,467,0,0,0,0,0
-,Great Transmigration,JS Native,Win8,MSJS?,467,0,0,0,0,0
-,Great Transmigration,JS Native,iOS7,MacJS?,467,0,0,0,0,0
+,Great Transmigration,JS Native,Methodology:,first class citizenship,467,0,0,0,0,0
+,Great Transmigration,JS Native,Win8,WinJS,467,0,0,0,0,0
+,Great Transmigration,JS Native,iOS7,JavaScriptCore,467,0,0,0,0,0
 ,Great Transmigration,JS Native,Methodology:,"ubiquity",467,0,0,0,0,0
 ,Great Transmigration,Internet of Things,johnnyfive.js,Rick Waldron,467,0,0,0,0,0
 ,Great Transmigration,Internet of Things,Microcontrollers,Tessel,467,0,0,0,0,0
